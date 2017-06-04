@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>DOTA2 - 刀塔官方网站 - 全球顶级竞技 唯一正统续作</title>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/logon.css"/>
+</head>
+<body>
+<div class="page clearfix">
+    <div id="mask_logon"></div>
+    <!--登录框出现时的遮挡层-->
+    <!--头部导航开始-->
+    <div class="header">
+        <div class="w nav" id="nav">
+            <!-- 右侧导航开始-->
+            <div class="nav_left fl">
+                <div class="nav_logo"><a href="进官网之前/index.html">Dota2</a></div>
+                <div class="right_list" id="mousePosition">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="sp1">首页</span><span class="sp2">HOME</span></a>
+
+                            <div class="home">
+                                <p><a href="#">品牌站</a></p>
+
+                                <p><a href="#">个人中心</a></p>
+
+                                <p><a href="#">秘密商店</a></p>
+
+                                <p><a href="#">玩家工坊</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sp1">资讯</span><span class="sp2">NEWS</span></a>
+
+                            <div class="newsPosition">
+                                <p><a href="#">官方新闻</a></p>
+
+                                <p><a href="#">赛事新闻</a></p>
+
+                                <p><a href="#">更新日志</a></p>
+
+                                <p><a href="#">游戏攻略</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sp1">赛事</span><span class="sp2">MATCH</span></a>
+
+                            <div class="match_center">
+                                <p><a href="赛事中心/index.html">赛事中心</a></p>
+
+                                <p><a href="活动中心/ActivityCenter.html">活动中心</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sp1">资料</span><span class="sp2">DATA</span></a>
+
+                            <div class="data">
+                                <p><a href="英雄资料/dota2/shadow_fiend.html">英雄资料</a></p>
+
+                                <p><a href="#">物品资料</a></p>
+
+                                <p><a href="#">视频中心</a></p>
+
+                                <p><a href="#">自定义地图</a></p>
+
+                                <p><a href="#">新人引导</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sp1">服务</span><span class="sp2">SERVICE</span></a>
+
+                            <div class="service">
+                                <p><a href="#">客服中心</a></p>
+
+                                <p><a href="#">官方论坛</a></p>
+
+                                <p><a href="#">新浪微博</a></p>
+
+                                <p><a href="#">网吧特权</a></p>
+
+                                <p><a href="#">通行证查证</a></p>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#"><span class="sp1">下载</span><span class="sp2">DOWN</span></a>
+
+                            <div class="down">
+                                <p><a href="#">游戏下载</a></p>
+
+                                <p><a href="#">刀塔助手</a></p>
+
+                                <p><a href="#">精美壁纸</a></p>
+
+                                <p><a href="data-official/data-official.html" target="_blank" >官方漫画</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧导航结束-->
+
+            <!-- 左侧导航开始-->
+            <div class="nav_right fr" id="nav_right">
+                <i></i>
+                <span>您好，请 <a href="#" id="aLogon">登录</a></span>
+                <s></s>
+
+                <div class="pstDiv">
+                    <span class="userHint">登录后可查看账号信息</span>
+                    <span class="pstDiv_line"></span>
+                    <span class="X" id="X">x</span>
+                </div>
+                <!-- 登录页开始-->
+
+                <div id="logon">
+                    <div class="center">
+                        <div id="txt_box">
+                            <input type="button" value="" class="btn1"/>
+                            <input type="text" placeholder="电子邮箱地址/手机号" value="" class="txt1" id="userName"/>
+                        </div>
+                        <div id="pwd_box">
+                            <input type="button" value="" class="btn2"/>
+                            <input type="password" placeholder="请输入您的密码" value="" class="txt2" id="pwd"/>
+
+                            <div id="inpSp"></div>
+                        </div>
+                        <div class="fl" id="fl">
+                            <i class="check" id="check">
+                                <span id="sp"></span>
+                            </i>
+                            <em>下次自动登录</em>
+                        </div>
+                        <div class="fr">
+                            <a href="###">忘记密码？</a>
+                        </div>
+                        <input type="button" value="登&nbsp;&nbsp; 录" id="center_btn"/>
+
+                        <div id="center_bom"><a href="###">完美神盾登录</a></div>
+                        <div id="btn_p">
+                            <p><a href="###" class="p_a">免费注册完美通行证账号</a></p>
+
+                            <p><a href="###" class="p_a">使用DOTA2账号找回完美通行证</a></p>
+                        </div>
+                        <!-- 关闭X-->
+                        <s id="close"></s>
+
+                    </div>
+                </div>
+
+                <!-- 登录页结束-->
+            </div>
+            <!-- 左侧导航结束-->
+        </div>
+    </div>
+    <!--头部导航结束-->
+
+    <!--头部广告轮播图开始-->
+    <div class="headBanner" id="banner">
+        <ul class="clearfix">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+        <!--焦点按钮-->
+        <div id="dv_btn" class="clearfix w">
+            <i></i>
+            <s></s>
+        </div>
+        <!-- 小圆点-->
+        <div id="dv_circle">
+            <ul class="clearfix">
+                <li></li>
+                <li class="dian_cls"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <!--头部广告轮播图结束-->
+
+    <!--头部按钮区开始-->
+    <div class="btn w clearfix">
+        <div class="btn_left clearfix fl" id="btn_left">
+            <a href="###" class="a1"></a>
+            <a href="###" class="a2"></a>
+            <a href="###" class="a3"></a>
+        </div>
+        <div class="btn_right fr" id="btn_right">
+            <a href="###" class="b1"></a>
+            <a href="###" class="b2"></a>
+            <a href="###" class="b3"></a>
+        </div>
+    </div>
+    <!--头部按钮区结束-->
+    <!--右侧定位二维码开始-->
+    <div class="right_erweima" id="right_erweima">
+        <div class="top_erweima">
+            <div class="onLine" id="onLine">
+                <a href="###">
+                    <s></s>
+
+                    <p>在线客服</p>
+                </a>
+
+            </div>
+            <p class="eMail">投诉邮箱</p>
+
+            <p class="address">tsdota2@cswanmei.com</p>
+        </div>
+        <div class="middle_erweima">
+            <div class="mSina" id="mSina">
+                <a href="###">
+                    <s></s>
+
+                    <p>新浪微博</p>
+                </a>
+
+            </div>
+            <p class="p_dota">DOTA2官方微信</p>
+
+            <div class="erweim">
+                <img src="images/icon-sina-qr.png" alt="二维码"/>
+            </div>
+        </div>
+        <div class="bottom_erweima" id="bottom_erweima">
+            <div id="imgErweima"></div>
+        </div>
+        <div class="pstShou" id="pstShou">
+            <p>收</p>
+
+            <p>起</p>
+            <s></s>
+        </div>
+        <div class="pstZhan" id="pstZhan">
+            <p>展</p>
+
+            <p>开</p>
+            <s></s>
+        </div>
+    </div>
+    <!--右侧定位二维码结束-->
+   
+
+   
+    <!--新闻中心开始-->
+    <div class="main_news w">
+        <!--左边的新闻开始-->
+        <div class="news fl">
+            <div class="title_new" id="title_new">
+                <div class="title_top">
+                    <div class="title_top_left fl">
+                        <h4>新闻中心</h4>
+                        <i></i>
+                    </div>
+                    <div class="more fr" id="title_more">
+                        <a href="#">更多</a>
+                        <i></i>
+                    </div>
+                </div>
+                <div class="title_bottom">
+                    <ul id="title_ul">
+                        <li class="title_li"><a href="###">综合新闻</a></li>
+                        <li><a href="###">官方新闻</a></li>
+                        <li><a href="###">赛事新闻</a></li>
+                        <li><a href="###">更新日志</a></li>
+                        <li><a href="###">媒体资讯</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="matchObj">
+                <div class="main_match" id="main_match1">
+                    <a class="match">
+                        <h2>剑指东方！DOTA2亚洲邀请赛主赛事对阵图公布</h2>
+
+                        <div class="math_bottom">
+                            <div class="math_img fl">
+                                <img src="images/6f4e1f29b887e8a6594b0232cc6e5eef1490794417.jpg" alt="亚洲邀请赛" width="200"
+                                     height="120"/>
+                            </div>
+                            <div class="math_p fr">
+                                <p>
+                                    3月29日，为期三天的DOTA2亚洲邀请赛（简称DAC）小组赛全部结束，最终OG、Empire、iG、Newbee战队凭借稳健的发挥顺利晋级主赛事胜者组，其余战队将进入败者组。接下来，我们的目光将锁定在4月1日——4日的上海东方体育中心，12支战队将为争夺辉耀之剑展开激烈的争夺。</p>
+
+                                <div>2017-03-29</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_match" id="main_match2">
+                    <a class="match">
+                        <h2>​DOTA2亚洲邀请赛现场观赛指南及须知</h2>
+
+                        <div class="math_bottom">
+                            <div class="math_img fl">
+                                <img src="images/6f4e1f29b887e8a6594b0232cc6e5eef1490794417.jpg" alt="亚洲邀请赛" width="200"
+                                     height="120"/>
+                            </div>
+                            <div class="math_p fr">
+                                <p>
+                                    紧张激烈的三天小组赛结束后，12支队伍将休整两天，准备接下来更为残酷的主赛事。各位准备前来现场观战的小伙伴们也要开始收拾行囊出发了。为了更加便于现场观众观看比赛，请仔细阅读观赛指南及须知：</p>
+
+                                <div>2017-03-31</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_match" id="main_match3">
+                    <a class="match">
+                        <h2>​DOTA2亚洲邀请赛现场观赛指南及须知
+                        </h2>
+
+                        <div class="math_bottom">
+                            <div class="math_img fl">
+                                <img src="images/6f4e1f29b887e8a6594b0232cc6e5eef1490794417.jpg" alt="亚洲邀请赛" width="200"
+                                     height="120"/>
+                            </div>
+                            <div class="math_p fr">
+                                <p>
+                                    紧张激烈的三天小组赛结束后，12支队伍将休整两天，准备接下来更为残酷的主赛事。各位准备前来现场观战的小伙伴们也要开始收拾行囊出发了。为了更加便于现场观众观看比赛，请仔细阅读观赛指南及须知：</p>
+
+                                <div>2017-03-31</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_match" id="main_match4">
+                    <a class="match">
+                        <h2> DOTA2 3月24日更新： 7.04版本发布 巫医“占卜之誓”套装新增款式</h2>
+
+                        <div class="math_bottom">
+                            <div class="math_img fl">
+                                <img src="images/f8082b949bac72878c6891834abcd0d41490352428.jpg" alt="亚洲邀请赛" width="200"
+                                     height="120"/>
+                            </div>
+                            <div class="math_p fr">
+                                <p>
+                                    DOTA2 3月24日更新： 7.04版本发布 巫医“占卜之誓”套装新增款式</p>
+
+                                <div>2017-03-24</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="main_match" id="main_match5">
+                    <a class="match">
+                        <h2>【电竞虎推荐】四千分鱼塘之冲分利器：节奏感</h2>
+
+                        <div class="math_bottom">
+                            <div class="math_img fl">
+                                <img src="images/ba4eedebb7062daf84bd81b1d9fd902c1490258202.jpg" alt="亚洲邀请赛" width="200"
+                                     height="120"/>
+                            </div>
+                            <div class="math_p fr">
+                                <p>
+                                    当你熟悉并掌握了所有的英雄打法，把握好节奏能让你如虎添翼，今天让我们来聊聊再有节奏陪伴下的上分快感！</p>
+
+                                <div>2017-03-23</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div id="dvObj">
+                <div id="new_ul1" class="new_ul">
+                    <ul>
+                        <li>
+                            <a href="#" class="new_li_one">
+                                <i></i>
+
+                                <p> DAC小组赛结束：iG携手Newbee晋级主赛事胜者组</p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 2017年国际邀请赛8月7日至8月12日回归钥匙体育馆 门票即将开售</p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 小组赛首日综述：OG无愧春秋霸主 中国军团无惧死亡之组</p>
+                                <span>2017-03-28</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DOTA2亚洲邀请赛小组赛赛前花絮</p>
+                                <span>2017-03-27</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 群雄逐鹿，DAC小组赛看点汇总</p>
+                                <span>2017-03-26</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 【视频】DOTA2亚洲邀请赛专属珍藏-荧煌之礼</p>
+                                <span>2017-03-25</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DOTA2亚洲邀请赛比赛场馆&酒店全攻略</p>
+                                <span>2017-03-24</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="new_ul2" class="new_ul">
+                    <ul>
+                        <li>
+                            <a href="#" class="new_li_one">
+                                <i></i>
+
+                                <p> ​决战东体！2017亚洲邀请赛正赛明日正式打响</p>
+                                <span>2017-03-31</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 剑指东方！DOTA2亚洲邀请赛主赛事对阵图公布 </p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DAC小组赛结束：iG携手Newbee晋级主赛事胜者组 </p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 2017年国际邀请赛8月7日至8月12日回归钥匙体育馆 门票即将开售</p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 小组赛首日综述：OG无愧春秋霸主 中国军团无惧死亡之组 </p>
+                                <span>2017-03-28</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DOTA2亚洲邀请赛小组赛赛前花絮</p>
+                                <span>2017-03-27</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DOTA2亚洲邀请赛比赛场馆&酒店全攻略</p>
+                                <span>2017-03-24</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="new_ul3" class="new_ul">
+                    <ul>
+                        <li>
+                            <a href="#" class="new_li_one">
+                                <i></i>
+
+                                <p> ​决战东体！2017亚洲邀请赛正赛明日正式打响 </p>
+                                <span>2017-03-31</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 剑指东方！DOTA2亚洲邀请赛主赛事对阵图公布 </p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> DAC小组赛结束：iG携手Newbee晋级主赛事胜者组
+                                </p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 2017年国际邀请赛8月7日至8月12日回归钥匙体育馆 门票即将开售 </p>
+                                <span>2017-03-29</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 小组赛首日综述：OG无愧春秋霸主 中国军团无惧死亡之组 </p>
+                                <span>2017-03-28</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p>DOTA2亚洲邀请赛小组赛赛前花絮 </p>
+                                <span>2017-03-27</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 群雄逐鹿，DAC小组赛看点汇总 </p>
+                                <span>2017-03-26</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="new_ul4" class="new_ul">
+                    <ul>
+                        <li>
+                            <a href="#" class="new_li_one">
+                                <i></i>
+
+                                <p> 3月16日更新：主宰至宝剑心之遗推出 7.03游戏性改动 </p>
+                                <span>2017-03-16</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 3月14日更新日志：非天梯全英雄选择的挑选顺序改动</p>
+                                <span>2017-03-14</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 3月4日更新日志：推出冬季珍藏III 英雄饰品查看面板回归</p>
+                                <span> 2017-03-04</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p>DOTA2 2月22日更新日志：修复无法购买物品的问题 </p>
+                                <span>2017-02-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p>2月14日更新日志：修复中文有时会不显示的问题 </p>
+                                <span>2017-02-14</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 2月9日更新日志：7.02游戏性更新
+                                </p>
+                                <span> 2017-02-09</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 1月21日更新日志：游戏内界面更新</p>
+                                <span>2017-01-21</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div id="new_ul5" class="new_ul">
+                    <ul>
+                        <li>
+                            <a href="#" class="new_li_one">
+                                <i></i>
+
+                                <p> 【全球电竞网推荐】V社的细心：主宰至宝“剑心之遗”的六个彩蛋</p>
+                                <span>2017-03-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 【全球电竞网推荐】第二届亚洲邀请赛正赛将至：五大看点点燃激情</p>
+                                <span> 2017-03-22</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 【电竞虎推荐】四千分鱼塘之冲分利器：影魔</p>
+                                <span>2017-03-20</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 【电竞虎推荐】老骥伏枥志在千里：IG绝地翻盘</p>
+                                <span>2017-03-15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p>【全球电竞网推荐】Dota2基辅特锦赛地区预选赛总结：国外篇</p>
+                                <span> 2017-03-15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p>【全球电竞网推荐】Dota2基辅特锦赛地区预选赛总结：国内篇</p>
+                                <span>2017-03-15</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+
+                                <p> 《梦想X计划》—你曾是少年</p>
+                                <span>2017-03-09</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--右侧近期热点开始-->
+        <div class="hot fr">
+            <div class="hot_top">
+                <div class="hot_top_left fl">
+                    <i></i>
+                    <h4>近期热点</h4>
+                </div>
+                <div id="hot_top_right" class="fr">
+                    <a href="#">更多</a>
+                    <i></i>
+                </div>
+            </div>
+            <div id="hot_viedo">
+                <video src="images/dacshow960x540.mp4" autoplay width="416" id="viedo"></video>
+                <div id="hot_btn"></div>
+            </div>
+            <div id="hot_img">
+                <div id="hot_bg">
+                    <div id="hot_small">
+                        <img id="img_title" class="img-title" src="images/img-title.png" alt=""/>
+
+                        <p>梦开始的地方</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <!--活动中心开始-->
+    <div class="content_news">
+        <div class="w">
+            <div>
+                <div class="news_left public fl">
+            <span class="fl">
+                <i></i>
+                <h3>活动中心</h3>
+            </span>
+                <span class="fr"><a href="javascript:void (0)">更多
+                    <e></e>
+                </a></span>
+                </div>
+                <div class="news_right public fr">
+             <span class="fl">
+                <i></i>
+                <h3>最新赛事</h3>
+            </span>
+                <span class="fr"><a href="javascript:void (0)">更多
+                    <e></e>
+                </a></span>
+                </div>
+            </div>
+            <div class="shop fl" id="shop">
+                <div class="shop_lb" id="shop_lb">
+                    <div class="dvv">
+                        <ul class="uu">
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/77c226a6961a9b94c5ec710b278a60a11489063546.jpg" alt=""/>
+
+                                    <p>DAC现场门票火热售卖中</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/e56a16037e99bcd23c68ba9534fcb7fb1490608114.jpg" alt=""/>
+
+                                    <p>炽魂助阵DAC 外设新锐震撼来袭</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/9540d567ffa78831f06b99bcba3439011487761697.jpg" alt=""/>
+
+                                    <p>Ti7官方英雄手办全球同步发售</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+
+                                    <img src="images/cd7221d5b196f4f69f6ece9ec56665551490712945.png" height="150px"
+                                         width="310px" alt=""/>
+
+                                    <p>TOTA2亚洲邀请赛官方指定用机</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dvv">
+                        <ul class="uu">
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" alt=""/>
+
+                                    <p>DAC专属神秘商店开启限时抢购</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" alt=""/>
+
+                                    <p>DAC互动指南正式上线，全民免费参与</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/700e7df9103a309f48f14e5e21a4e2571489716203.jpg" alt=""/>
+
+                                    <p>剑心之遗更新，主宰至宝现已推出</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" height="150px"
+                                         width="310px" alt=""/>
+
+                                    <p>拯救者杯完美世界DOTA2高校联赛</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dvv">
+                        <ul class="uu">
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/77c226a6961a9b94c5ec710b278a60a11489063546.jpg" alt=""/>
+
+                                    <p>DAC现场门票火热售卖中</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/e56a16037e99bcd23c68ba9534fcb7fb1490608114.jpg" alt=""/>
+
+                                    <p>炽魂助阵DAC 外设新锐震撼来袭</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/9540d567ffa78831f06b99bcba3439011487761697.jpg" alt=""/>
+
+                                    <p>Ti7官方英雄手办全球同步发售</p>
+                                </a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="javascript:void (0)">
+                                    <img src="images/cd7221d5b196f4f69f6ece9ec56665551490712945.png" height="150px"
+                                         width="310px" alt=""/>
+
+                                    <p>TOTA2亚洲邀请赛官方指定用机</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="left" id="left"><a href="javascript:void (0)"></a></div>
+                <div class="right" id="right"><a href="javascript:void (0)"></a></div>
+                <div class="dian" id="dian">
+                    <ul>
+                        <li class="cl" id="cl"></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="games fr">
+                <div class="games_top">
+                    <ul id="lun">
+                        <li style="left:-25px;top:25px">
+                            <a class="lun_bo" href="javascript:void (0)">
+                                <img width="200px" height="117px"
+                                     src="images/f5c6ca40ab4688234c869adccdd75e2d1487146007.jpg" alt=""/>
+
+                                <p>DOTA2亚洲邀请赛</p>
+                            </a>
+                        </li>
+                        <li style="left:54px;top:0">
+                            <a class="lun_bo" href="javascript:void (0)">
+                                <img src="images/271dd3a876a35e06c13178f0cc1d72831490351076.jpg" alt=""/>
+
+                                <p>拯救者杯高校联赛</p>
+                            </a>
+                        </li>
+                        <li style="left:160px;top:25px">
+                            <a class="lun_bo" href="javascript:void (0)">
+                                <img src="images/574cee628352d29241ac2c5c110e18501481861769.jpg" alt=""/>
+
+                                <p>波斯顿特级锦标赛</p>
+                            </a>
+                        </li>
+                        <li style="left:54px;top:18px">
+                            <a class="lun_bo" href="javascript:void (0)">
+                                <img src="images/c04895f1ee941c52d34ac4387c20bbbc1481861889.png" alt=""/>
+
+                                <p>中国刀塔DOTA2职业联赛</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="gleft" id="gleft"><a href="javascript:void (0)"></a></div>
+                    <div class="gright" id="gright"><a href="javascript:void (0)"></a></div>
+                    <div class="dian_r" id="dian_r">
+                        <li class="cl1" id="cl1"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </div>
+                </div>
+                <div class="games_bot ">
+                    <div class="nav public">
+                    <span class="fl">
+                        <i></i>
+                        <h3>自定义地图</h3>
+                    </span>
+                    <span class="fr"><a href="javascript:void (0)">更多
+                        <e></e>
+                    </a></span>
+                    </div>
+                    <a class="monkey fl" href="javascript:void (0)">
+                        <img src="images/20170316140551.jpg!a-1-200x117.jpg" alt=""/>
+                        <span>MONKEY WARS</span>
+                    </a>
+                    <a class="monkey fr" href="javascript:void (0)">
+                        <img src="images/20170316135351.jpg!a-1-200x117.jpg" alt=""/>
+                        <span>BUBICK VS INVOKER</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--活动中心结束-->
+
+
+    <!--视频中心开始-->
+    <div class="content-btm">
+        <!--版心-->
+        <div class="w">
+            <!--视频中心和视频列表-->
+            <div class="leftNews">
+                <!--视频和更多-->
+                <div class="newsAndMore">
+                    <!--视频中心-->
+                    <div class="c-left">
+                        <i class="c-icon"></i>
+                        <span>视频中心</span>
+                    </div>
+                    <!--更多-->
+                    <div class="c-right" id="c-right">
+                        <a href="#" id="c-more">更多</a>
+                        <i class="c-icon-more"></i>
+                    </div>
+                </div>
+                <!--视频列表-->
+                <div class="c-newsList" id="c-newsList">
+                    <ul class="c-top">
+                        <li class="c-current">最新视频</li>
+                        <li>
+                            官方视频
+                            <i class="c-hot"></i>
+                        </li>
+                        <li>
+                            比赛视频
+                            <i class="c-hot1"></i>
+                        </li>
+                        <li>战队视频</li>
+                    </ul>
+                    <ul class="c-bottom">
+                        <li class="bd-current">
+                            <a href="javascript:void(0)" >
+                                <img src="images/videos-20161009-01.jpg">
+                                <p>DOTA2西游记战队视频彩蛋流出 师徒开黑巧遇林书豪</p>
+                                <i class="play-icon" ></i>
+                            </a>
+                            <a href="javascript:void(0)" >
+                                <img src="images/videos-20161009-02.jpg">
+                                <p>DOTA2【英雄绝活】敌哥讲故事大圣的故事</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-03.jpg">
+                                <p>Dota2每周失败集锦176期：小狗钻兵钓鱼执法</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-04.jpg">
+                                <p>OB海鲜团出征VPCL鱼塘第一日视频 鲷哥视角</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-05.jpg">
+                                <p>DOT2 YYF小剧场第19期 自以为天下无敌的巨魔</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-06.jpg">
+                                <p>RTZ又练会一个新绝活 满脑都是骚操作的先知</p>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-07.png">
+                                <p>Miracle-27杀48血精 来自风暴之灵的杀戮秀</p>
+                                <i class="play-icon"></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-08.png">
+                                <p>VP每周DOTA资讯vol.4:OB 南北F4参战VPCL</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-09.png">
+                                <p>DOTA2决战东方!DOTA2亚洲邀请赛2017 重启荣耀之争</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-10.png">
+                                <p>DOTA2西游记战队视频彩蛋流出 师徒开黑巧遇林书豪</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-11.png">
+                                <p>DAC小组赛前花絮视频 各队伍定妆照拍摄中</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-12.png">
+                                <p>DOTA2亚洲邀请赛Wings.iceice 梦开始的地方</p>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-04.jpg">
+                                <p>看哭了！亚洲邀请赛2017 iG战队夺冠之路集锦</p>
+                                <i class="play-icon"></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-12.png">
+                                <p>OB海鲜团解说 DAC主赛事败者组 IG VS Wings</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-02.jpg">
+                                <p>OB海鲜团解说 DAC主赛事败者组 EG VS Wings</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-03.jpg">
+                                <p>DOTA2西游记战队视频彩蛋流出 师徒开黑巧遇林书豪</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-05.jpg">
+                                <p>看哭了！亚洲邀请赛2017 iG战队夺冠之路集锦</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-10.png">
+                                <p>OB海鲜团解说 DAC主赛事败者组 EG VS Wings</p>
+                                <i></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-06.jpg">
+                                <p>OB海鲜团出征VPCL鱼塘第一日视频 鲷哥视角</p>
+                                <i class="play-icon"></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-08.png">
+                                <p>采访老11：队伍磨合不错 目标争取出国名额</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-09.png">
+                                <p>马尼拉大师赛 iG战队赛后分（邀）锅（功）大会</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-10.png">
+                                <p>DOTA2西游记战队视频彩蛋流出 师徒开黑巧遇林书豪</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-11.png">
+                                <p>揭秘世界冠军的真实故事 记叙OG战队海外集训</p>
+                                <i></i>
+                            </a>
+                            <a href="javascript:void(0)" ><img src="images/videos-20161009-12.png">
+                                <p>专访VG.J.Freeze：先赚个100W为妈妈买套房</p>
+                                <i></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!--客服中心和搜索框内容-->
+            <div class="right-service">
+                <!--客服中心和更多-->
+                <div class="serviceAndMore">
+                    <div class="s-left">
+                        <i class="s-icon"></i>
+                        <span>客服中心</span>
+                    </div>
+                    <!--更多-->
+                    <div class="s-right">
+                        <a href="#" id="s-more">更多</a>
+                        <i class="s-icon-more"></i>
+                    </div>
+                </div>
+                <!--搜索框和文字内容-->
+                <div class="r-service">
+                    <!--搜索框部分-->
+                    <div class="r-search">
+                        <div id="dv">
+                            <input type="text" value="请输入你的问题" class="one" id="search-btn">
+                            <input type="button" value="" class="two">
+                            <i class="r-search-icon"></i>
+                        </div>
+                        <a href="#" class="r-ask">我要提问</a>
+                    </div>
+                    <!--常见问题部分-->
+                    <div class="r-question">
+                        <h3>常见问题</h3>
+
+                        <div class="r-list" id="ask-question">
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>如何找回与DATA2绑定的完美通行证？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>为什么我需要注册俩个账号？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>如何注册DATA2账号？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>如何绑定完美通行证？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>为什么我需要注册俩个账号？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>为什么我需要注册俩个账号？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>在XP系统下切换容易使游戏导致崩溃，怎么办？？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>为什么我需要注册俩个账号？</p>
+                            </a>
+                            <a href="#">
+                                <i class="q-icon"></i>
+
+                                <p>如何查看自己的数字ID？</p>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--视频中心结束-->
+    <!-- 底部开始-->
+    <div class="bg-wrap4">
+        <div class="bg-wrap4main w">
+            <div class="top">
+                <a class="aa" href="###"><img src="images/logo-wanmei.png" alt=""/></a>
+                <a class="aaa" href="###"><img src="images/logo-valve.png" alt=""/></a>
+                <span id="s3">
+                    完美世界（北京）网络技术有限公司 版权所有 Copyright ? 2012-2017 Perfect World Co., Ltd. All Rights reserved<br/>
+                   @2012 Valve Corporation. All Rights reserved. Licensed to Perfect World Co., Ltd. in China</span>
+            </div>
+            <div class="bottom">
+                <p>京ICP证：050016号《网络文化经营许可证》编号：京网文[2011]0782-287号《网络视听许可证》编号：0110587</p>
+                <p>京公网安备110105019888号 文网进字[2013] 028号 新出审字[2013] 1505号 ISBN：978-7-89989-826-0</p>
+            </div>
+        </div>
+    </div>
+    <!-- 底部结束-->
+
+</div>
+
+
+<script src="js/common.js"></script>
+<script src="js/jquery-1.12.1.js"></script>
+<script src="js/index.js"></script>
+<script src="js/logon.js"></script>
+</body>
+</html>

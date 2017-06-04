@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="maximum-scale=1,miximum-scale=1,width=device-width">
+	<meta name="keywords" content="dota2,dota,官网,英雄,对战,续作,经典,moba">
+	<meta name="description" content="DOTA2是由DotA之父Icefrog主创打造的唯一正统续作，其完整继承了原作DotA超过一百位的英雄。DOTA2的玩法和DotA完全相同，通过顶级的系统、美术和功能，呈现出了超越经典且原味十足的体验感觉。拥有顶级品质，竞争力十足的DOTA2已然主宰了时代的脉动，其必将让所有DOTAer的骄傲、荣耀与执着得到承载，延续永恒。为信仰守护，开始新的战斗吧！">
+	<title>新手启程- DOTA2 - 刀塔官方网站 - 全球顶级竞技 唯一正统续作</title>
+	<link href="css/lightcase.css" rel="stylesheet" />
+	<link href="css/index.css" rel="stylesheet" />
+	<!--[if lt IE 9]>
+	<style>.videolink{display:none;}</style>
+	<![endif]-->
+</head>
+<body>
+	<div class="content-wrap">
+		<div class="subcon1">
+			<h1 class="title">开启你的DOTA2征程</h1> 
+			<p class="legend">DOTA2是由DotA之父lcefrog和VALVE公司通过起源2引擎打造的唯一正统续作，<br/>
+完整继承了DotA超过一百位英雄。让荣耀得到传承、信仰得到延续。<br/>
+英雄、需要新的战斗！</p>
+			<a class="videolink" href="javascript:;" id="J_videolink"></a>
+		</div>
+		<div class="subcon2" title="经典玩法，十年沉淀"></div>
+		<div class="subcon3" title="特色饰品，公平对战"></div>
+		<div class="subcon4" title="征程就在前方">
+			<a href="http://www.dota2.com.cn/guide/" target="_blank" class="link1" title="三步畅玩"></a>
+			<a href="http://www.dota2.com.cn/recruit/" target="_blank" class="link2" title="了解DOTA2"></a>
+			<div class="link1_hover"></div>
+			<div class="link2_hover"></div>
+		</div>
+	</div>
+	<div id="lightcase-case"  class="" data-type="video" >
+		<div class="lightcase-content">
+			<div class="lightcase-contentInner">
+				
+			</div>
+		</div>
+		<a href="javascript:;" class="lightcase-icon-close" style="opacity: 1;">×</a>
+	</div>
+	<div id="lightcase-overlay"></div>
+
+	<script src="js/jquery-1.11.0.min.js"></script> 
+	
+	<script>
+		$(function(){
+			var $lightcaseoverlay = $('#lightcase-overlay'),
+				$lightcasecase = $('#lightcase-case'),
+				J_videolink = $('#J_videolink');
+			J_videolink.on('click', function(){
+				var html = '<video poster="" preload="auto" controls="controls" autobuffer="true" autoplay="autoplay"'
+					+' loop="loop" '
+					+'>'
+					+' <source type="video/webm" src="http://dota2.dl.wanmei.com/dota2/media/whatsdota2.webm"></source>'
+					+' <source type="video/mp4" src="http://dota2.dl.wanmei.com/dota2/media/whatsdota2.mp4"></source>'
+				+' </video>';
+				$lightcasecase.find('.lightcase-contentInner').html(html);
+				$lightcaseoverlay.fadeIn().addClass('fadeIn');
+				$lightcasecase.fadeIn().addClass('fadeIn');
+
+			});
+			$lightcasecase.on('click', '.lightcase-icon-close', function(){
+				$lightcasecase.find('.lightcase-contentInner').html('');
+				$lightcaseoverlay.hide().removeClass('fadeIn');
+				$lightcasecase.hide().removeClass('fadeIn');
+			});
+		});
+	</script>
+	<script src="js/dota2_common_201610.js"></script>
+</body>
+</html>

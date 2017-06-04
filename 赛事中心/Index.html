@@ -1,0 +1,1338 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="dota2,dota,官网,英雄,对战,续作,经典,moba">
+    <meta name="description" content="DOTA2是由DotA之父Icefrog主创打造的唯一正统续作，其完整继承了原作DotA超过一百位的英雄。DOTA2的玩法和DotA完全相同，通过顶级的系统、美术和功能，呈现出了超越经典且原味十足的体验感觉。拥有顶级品质，竞争力十足的DOTA2已然主宰了时代的脉动，其必将让所有DOTAer的骄傲、荣耀与执着得到承载，延续永恒。为信仰守护，开始新的战斗吧！">
+    <title>赛事中心 -DOTA2 - 刀塔官方网站 - 全球顶级竞技 唯一正统续作</title>
+    <link href="css/reset.css" rel="stylesheet" />
+    <!--插件引入css-->
+    <link href="css/slick.min.css" rel="stylesheet" />
+
+    <link href="css/common.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/indexnew.css" rel="stylesheet" />
+    <link href="css/jquery.dota2.login.css" rel="stylesheet" />
+    <style>
+        .block-title video{
+            margin-top:50px;
+            /*margin-left:50px;*/
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+                <div class="dota2_nav_container">
+            <div class="nav_main clearfix">
+                <a href="#" title="《DOTA2》官方网站" class="nav_logo" target="_blank">《DOTA2》官方网站</a>
+                <span class="nav_split"></span>
+                <div class="dota2nav" id="dota2nav">
+                    <div class="link_div link_title">
+                        <a href="/match/index" target="_blank" id=" link_nav1" class="link_nav">
+                            <span>赛事中心</span>
+                        </a>
+                    </div>
+                    <div class="link_div">
+                        <a href="../index.html" id="link_nav2" class="link_nav">
+                            <span>首页</span>
+                            <span class="link_nav_e">HOME</span>
+                        </a>
+                    </div>
+                    <div class="link_div">
+                        <a href="/match/list" id="link_nav3" class="link_nav">
+                            <span>赛事</span>
+                            <span class="link_nav_e">MATCH</span>
+                        </a>
+                    </div>
+                    <div class="link_div">
+                        <a href="/match/index#block-team" id="link_nav4" class="link_nav">
+                            <span>战队</span>
+                            <span class="link_nav_e">TEAMS</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="dota2user" id="dota2user">
+                    <div class="user ">
+                        <i class="nav_icon icon-user"></i>
+                        <span></span>
+                    </div>
+                       <div class="btn btn-login" id="btn-login">您好，请&nbsp;<a href="javascript:;" id="J_dota2SignIn">登录</a>
+                            <script> var isLogin = false; </script>
+                                            </div>
+                                    </div>
+            </div>
+        </div>
+
+<!-- overlay -->
+<div id="Dota2_overlay"></div>
+
+<!-- J_dialog_passport -->
+<div class="Dota2dialogWrap" id="J_dialog_dota2_passport" style="background:#070707 ">
+	<!--<h3 class="title-passport">完美通行证登录</h3>-->
+	<a href="javascript:;" class="close-passport"></a>
+	<iframe frameborder="0" scrolling="no" data-src="http://passport.wanmei.com/sso/accounts/serviceLogin?continue=http%3A%2F%2Fact.dota2.com.cn%2Fsso%2Flogin&service=dota2_act&isiframe=1&location=2532464D61746368253246696E646578" src="" name="passport_login_iframe_parent" allowtransparency="true"></iframe>
+</div>
+
+        <!--这两行代码不懂-->
+<script> var applyPer = false; </script>
+
+<script> var isMobile = false; </script>
+
+
+
+
+
+        <div class="main_container">
+            <!--导航栏开始-->
+            <div class="top_container">
+                <div class="top_start clearfix">
+                    <ul class="players">
+                        <li class="player active" data-menu="menu_01" data-type="image" >
+                            <a href="#" target="_blank"><img src="images/032cf77ceb3628fdac482f264e62f79d1487146082.jpg" alt="" /></a>
+                        </li>
+                        <li class="player" data-menu="menu_02" data-type="image">
+                            <a href="#" target="_blank"><img src="images/6a503eb22ed3f88d325e8ff19d907f4a1490345524.jpg" alt="" /></a>
+                        </li>
+                        <li class="player" data-menu="menu_03" data-type="image">
+                            <a href="#" target="_blank"><img src="images/43e77d261b8e5134d445dabbaf99d5111490354624.jpg" alt="" /></a>
+                        </li>
+                    </ul>
+
+                    <div class="menus">
+                        <div class="menu active" data-menu="menu_01"><img src="images/845478dd4afd2a9976f90cdf3b6c57521487146079.jpg" alt="" /></div>
+                        <div class="menu" data-menu="menu_02"><img src="images/fbf42497672bc7a576d102a39fbff8af1490345508.jpg" alt="" /></div>
+                        <div class="menu" data-menu="menu_03"><img src="images/af431dbc8fc0cdcc1761efda1a5db6f21490354619.jpg" alt="" /></div>
+                        <div class="menu more">
+                            <a href="###" target="_self">
+                                查看更多&nbsp;+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--导航栏结束-->
+            <div class="content_start">
+                <div class="content_blocks clearfix">
+                    <!--视频中心-->
+                    <div class="block block-main block-video">
+                        <div class="block-title clearfix">
+                            <a href="javascript:void(0);"><i class="icon icon-video"></i>游戏视频</a>
+                            <a href="###" target="_self">更多+</a><br/>
+                            <video src="arcana0322.mp4" controls="controls" width="730"   autoplay="autoplay" loop="loop"></video>
+                        </div>
+                    </div>
+                    <!--视频中心结束-->
+                    <!--新闻中心开始-->
+                    <div class="block block-news">
+                        <div class="block-title clearfix">
+                            <a href="javascript:void(0);"><i class="icon icon-news"></i>赛事新闻</a>
+                            <a href="###" target="_self">更多+</a>
+                        </div>
+                        <div class="block-content">
+                        <a class="newest" href="###">剑指东方！DOTA2亚洲邀请赛主赛事对阵图公布</a>
+                            <ul class="newses">
+                                <li class="news"><a href="###">DAC小组赛结束：iG携手Newbee晋级主赛事胜者组</a></li>
+                                <li class="news"><a href="###">2017年国际邀请赛8月7日至8月12日回归钥匙体育馆 门票即将开售</a></li>
+                                <li class="news"><a href="###">小组赛首日综述：OG无愧春秋霸主 中国军团无惧死亡之组</a></li>
+                                <li class="news"><a href="###">DOTA2亚洲邀请赛小组赛赛前花絮</a></li>
+                                <li class="news"><a href="###">群雄逐鹿，DAC小组赛看点汇总</a></li>
+                                <li class="news"><a href="###">【视频】DOTA2亚洲邀请赛专属珍藏-荧煌之礼</a></li>
+                                <li class="news"><a href="###">DOTA2亚洲邀请赛比赛场馆&amp;酒店全攻略</a></li>
+                                <li class="news"><a href="###">欢迎来到DAC专属神秘商店 首批周边清单曝光</a></li>
+                                <li class="news"><a href="###">​DAC小组赛第二日综述：OG依旧强势锁定胜者组；B组形势不明</a></li>
+                                <li class="news"><a href="###">DOTA2亚洲邀请赛小组赛结束后开启SOLO赛8进4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--新闻中心结束-->
+
+                </div>
+                <!--职业战队部分开始-->
+                <div class="content_blocks blocks-team clearfix" id="block-team">
+                    <div class="block block-team">
+                        <div class="block-title clearfix">
+                            <a href="javascript:void(0);"><i class="icon icon-cup"></i>职业战队介绍</a>
+                            <a href=" #" target="_blank"><!--更多+--></a>
+                            <ul class="tabs clearfix">
+                                <li class="tab active" data-tab="team-in"><a href="javascript:void(0);">国内战队</a></li>
+                                <li class="tab" data-tab="team-out"><a href="javascript:void(0);">国外战队</a></li>
+                            </ul>
+                        </div>
+                        <div class="block-content block-content-team" id="block_teams">
+                            <ul class="panes">
+                                <li class="pane pane-teams pane-teams-in active clearfix" data-tab="team-in">
+                                    <i class="icon icon-arrow-left"></i>
+                                    <i class="icon icon-arrow-right"></i>
+                                    <div class="teams-wrapper">
+                                        <div class="teams-container">
+                                            <!--国内战队的第一面-->
+                                            <div class="teams-row clearfix">
+                                                <a href="javascript:void(0);" class="team" data-id="91">
+                                                    <span class="team-avatar"><img src="images/26f3ec26f8fa698a7d4f3ce455e605e71476006038.png" alt="" /></span>
+                                                    <p class="team-desc">LFY</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="101">
+                                                    <span class="team-avatar"><img src="images/b0be43eaffc6c27076f8b536dfdb78471476178758.png" alt="" /></span>
+                                                    <p class="team-desc">IG</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="121">
+                                                    <span class="team-avatar"><img src="images/bb33ab349efa37aa3482d7d8fe9958f01476006074.png" alt="" /></span>
+                                                    <p class="team-desc">EHOME</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="81">
+                                                    <span class="team-avatar"><img src="images/6d67a0e7aa6cb21543f4829fa8c191c21476006054.png" alt="" /></span>
+                                                    <p class="team-desc">LGD</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team no-right-margin" data-id="111">
+                                                    <span class="team-avatar"><img src="images/996834ddb72919a773e536a69c0fcf961476006058.png" alt="" /></span>
+                                                    <p class="team-desc">VG</p>
+                                                    <span class="split"></span>
+
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="241">
+                                                    <span class="team-avatar"><img src="images/4ce02fe158a3d0792db48f3ad9071d9b1476178883.png" alt="" /></span>
+                                                    <p class="team-desc">Team VGJ</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="231">
+                                                    <span class="team-avatar"><img src="images/3d935b42ad4fbda349930b66e49b7e3e1476178791.png" alt="" /></span>
+                                                    <p class="team-desc">CDEC</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="171">
+                                                    <span class="team-avatar"><img src="images/696843f16d047d62b2c1c0b38b3ed4b31476006079.png" alt="" /></span>
+                                                    <p class="team-desc">Wings</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="181">
+                                                    <span class="team-avatar"><img src="images/c0fa4e9eb59b19965038bb9056a006fd1476006089.png" alt="" /></span>
+                                                    <p class="team-desc">IG.V</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team no-right-margin" data-id="251">
+                                                    <span class="team-avatar"><img src="images/8ade1974f431e43815ac13ded6d13b021476424568.png" alt="" /></span>
+                                                    <p class="team-desc">NEWBEE</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                            </div>
+                                            <!--国内战队的第二面-->
+                                            <div class="teams-row clearfix">
+                                                <a href="javascript:void(0);" class="team" data-id="191">
+                                                    <span class="team-avatar"><img src="images/c0fa4e9eb59b19965038bb9056a006fd1476006089.png" alt="" /></span>
+                                                    <p class="team-desc">TongFu</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="361">
+                                                    <span class="team-avatar"><img src="images/9645c4297cf3b5a3f620d7aa871b92df1477895117.png" alt="" /></span>
+                                                    <p class="team-desc">TNC Pro</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="151">
+                                                    <span class="team-avatar"><img src="images/136f9d66d1eb065eb872cb84b67c40d21476006123.png" alt="" /></span>
+                                                    <p class="team-desc">EHOME.K</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="161">
+                                                    <span class="team-avatar"><img src="images/0a97e6ecd7932778c269b717368479861476006128.png" alt="" /></span>
+                                                    <p class="team-desc">EHOME.L</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team no-right-margin" data-id="221">
+                                                    <span class="team-avatar"><img src="images/630ead969ccc529537c3089d0f1924861476157539.png" alt="" /></span>
+                                                    <p class="team-desc">FTDA</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="211">
+                                                    <span class="team-avatar"><img src="images/34649b61e306aa2a0810c922c8b857cc1476006099.png" alt="" /></span>
+                                                    <p class="team-desc">Bheart</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="201">
+                                                    <span class="team-avatar"><img src="images/e866575ad86fce154a807f75ac8bbdeb1476006093.png" alt="" /></span>
+                                                    <p class="team-desc">WAY</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                            </div>
+                                        <!--</div>-->
+                                    </div>
+                                </li>
+                                <!--国外战队-->
+                                <li class="pane pane-teams pane-teams-out clearfix" data-tab="team-out">
+                                    <i class="icon icon-arrow-left"></i>
+                                    <i class="icon icon-arrow-right"></i>
+                                    <div class="teams-wrapper">
+                                        <div class="teams-container">
+                                            <!--国外战队的第一面-->
+                                            <div class="teams-row clearfix">
+                                                <a href="javascript:void(0);" class="team" data-id="281">
+                                                    <span class="team-avatar"><img src="images/a8fa8d5399c37ea93ecdcc1811b202061476427317.png" alt="" /></span>
+                                                    <p class="team-desc">EG</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="291">
+                                                    <span class="team-avatar"><img src="images/00959f7052c3f4dda2503e5ce40c0afc1476427357.png" alt="" /></span>
+                                                    <p class="team-desc">OG</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="271">
+                                                    <span class="team-avatar"><img src="images/b6acd045d26907c0b62142f6d42671d91476427297.png" alt="" /></span>
+                                                    <p class="team-desc">MVP</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="261">
+                                                    <span class="team-avatar"><img src="images/0fb13f50e173294a00fa0d4512f9cbb41476427283.png" alt="" /></span>
+                                                    <p class="team-desc">Secret</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team no-right-margin" data-id="301">
+                                                    <span class="team-avatar"><img src="images/2d5dc8a5d7c18972c7804d289447a8cc1477887861.png" alt="" /></span>
+                                                    <p class="team-desc">Alliance</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="311">
+                                                    <span class="team-avatar"><img src="images/86728d19d5415141915ff1aafb68b7fe1477888032.png" alt="" /></span>
+                                                    <p class="team-desc">Digital Chaos</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="321">
+                                                    <span class="team-avatar"><img src="images/630ead969ccc529537c3089d0f1924861476157539.png" alt="" /></span>
+                                                    <p class="team-desc">Fnatic</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="331">
+                                                    <span class="team-avatar"><img src="images/04c6479ddd13b9c01a8f33dcb6e6308c1477888362.png" alt="" /></span>
+                                                    <p class="team-desc">Team Liquid</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team" data-id="341">
+                                                    <span class="team-avatar"><img src="images/3b170cb86d76017fdfb011bbfbc8dae31477888566.png" alt="" /></span>
+                                                    <p class="team-desc">Natus Vincere</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                                <a href="javascript:void(0);" class="team no-right-margin" data-id="351">
+                                                    <span class="team-avatar"><img src="images/1628b736e6122796b512b6a9acacfe371477894987.png" alt="" /></span>
+                                                    <p class="team-desc">Escape Gaming</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                            </div>
+                                            <!--国外战队的第二面-->
+                                            <div class="teams-row clearfix">
+                                                <a href="javascript:void(0);" class="team" data-id="371">
+                                                    <span class="team-avatar"><img src="images/2ba8844ff7daa465406aded1c50524821477895270.png" alt="" /></span>
+                                                    <p class="team-desc">Execration</p>
+                                                    <span class="split"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="team-pop" id="team-pop">
+                                <div class="clearfix">
+                                    <div class="team-name">
+                                        <h2>EHOME战队</h2>
+                                        <h2>现役队员</h2>
+                                    </div>
+                                    <div class="team-members-container">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部开始-->
+        <div class="bg-wrap4">
+            <div class="bg-wrap4main w">
+                <div class="top">
+                    <a class="aa" href="###"><img src="images/logo-wanmei.png" alt=""/></a>
+                    <a class="aaa" href="###"><img src="images/logo-valve.png" alt=""/></a>
+                <span id="s3">
+                    完美世界（北京）网络技术有限公司 版权所有 Copyright ? 2012-2017 Perfect World Co., Ltd. All Rights reserved<br/>
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@2012 Valve Corporation. All Rights reserved. Licensed to Perfect World Co., Ltd. in China</span>
+                </div>
+                <div class="bottom">
+                    <p>京ICP证：050016号《网络文化经营许可证》编号：京网文[2011]0782-287号《网络视听许可证》编号：0110587</p>
+                    <p>京公网安备110105019888号 文网进字[2013] 028号 新出审字[2013] 1505号 ISBN：978-7-89989-826-0</p>
+                </div>
+            </div>
+        </div>
+        <!-- 底部结束-->
+
+
+
+
+
+    </div>
+
+
+    <script> var teamMembers = {
+        "91": [{
+            "id": "91",
+            "team_id": "91",
+            "name": "\u675c\u9e4f",
+            "nickname": "MONET",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "101",
+            "team_id": "91",
+            "name": "\u8c22\u4fca\u8c6a",
+            "nickname": "Super",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "111",
+            "team_id": "91",
+            "name": "\u59da\u5ce5\u5ce5",
+            "nickname": "YAO",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "121",
+            "team_id": "91",
+            "name": "\u5f20\u5b81",
+            "nickname": "XIAO8",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "131",
+            "team_id": "91",
+            "name": "\u7f57\u84b2\u8d85",
+            "nickname": "LPC",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "281": [{
+            "id": "891",
+            "team_id": "281",
+            "name": "Artour Babaev",
+            "nickname": "Arteezy",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "901",
+            "team_id": "281",
+            "name": "Sumail Hassan",
+            "nickname": "Suma1l",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "911",
+            "team_id": "281",
+            "name": "Saahil Arora",
+            "nickname": "UNiVeRsE",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "921",
+            "team_id": "281",
+            "name": "Ludwig W\u00e5hlberg",
+            "nickname": "Zai",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "931",
+            "team_id": "281",
+            "name": "Andreas Nielsen",
+            "nickname": "cr1t",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "101": [{
+            "id": "291",
+            "team_id": "101",
+            "name": "\u5f90\u5fd7\u96f7",
+            "nickname": "BurNIng",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "301",
+            "team_id": "101",
+            "name": "\u6b27\u9e4f",
+            "nickname": "Op",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "311",
+            "team_id": "101",
+            "name": "\u6797\u9756",
+            "nickname": "Xxs",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "321",
+            "team_id": "101",
+            "name": "\u53f6\u667a\u6807",
+            "nickname": "Boboka",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "331",
+            "team_id": "101",
+            "name": "\u5085\u5f6c",
+            "nickname": "Q",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "291": [{
+            "id": "941",
+            "team_id": "291",
+            "name": "Johan Sundstein",
+            "nickname": "nOtail",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "951",
+            "team_id": "291",
+            "name": "Anathan Pham",
+            "nickname": "Ana",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1011",
+            "team_id": "291",
+            "name": "Gustav Magnusson",
+            "nickname": "S4",
+            "number": "3",
+            "img":"1.jpg"
+        }, {
+            "id": "1021",
+            "team_id": "291",
+            "name": "Jesse Vainikka",
+            "nickname": "JerAx",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "981",
+            "team_id": "291",
+            "name": "Tal Aizik",
+            "nickname": "Fly",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "121": [{
+            "id": "41",
+            "team_id": "121",
+            "name": "\u5218\u5609\u4fca",
+            "nickname": "Sylar",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "51",
+            "team_id": "121",
+            "name": "\u738b\u5fd7\u52c7",
+            "nickname": "old chicken",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "61",
+            "team_id": "121",
+            "name": "\u4efb\u6768\u4f1f",
+            "nickname": "old eLeVeN",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "71",
+            "team_id": "121",
+            "name": "\u5218\u946b\u6d32",
+            "nickname": "Garder",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "81",
+            "team_id": "121",
+            "name": "\u5f20\u5fd7\u6210",
+            "nickname": "old LaNm",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "271": [{
+            "id": "1041",
+            "team_id": "271",
+            "name": "Kim Seon-yeob",
+            "nickname": "QO",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1051",
+            "team_id": "271",
+            "name": "Kim Yong-min",
+            "nickname": "Febby",
+            "number": "2",
+            "img":"1.jpg"
+        }, {
+            "id": "1061",
+            "team_id": "271",
+            "name": "Kim Seon-yeob",
+            "nickname": "Velo",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1071",
+            "team_id": "271",
+            "name": "Lee Jun-yeong",
+            "nickname": "ReiSeN",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "1081",
+            "team_id": "271",
+            "name": "Kim Doo-young",
+            "nickname": "DuBu",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "81": [{
+            "id": "141",
+            "team_id": "81",
+            "name": "\u738b\u6df3\u715c",
+            "nickname": "AME",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "151",
+            "team_id": "81",
+            "name": "\u8def\u579a",
+            "nickname": "MAYBE",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "161",
+            "team_id": "81",
+            "name": "\u8096\u5b50\u8c6a",
+            "nickname": "JIXING",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "171",
+            "team_id": "81",
+            "name": "\u9648\u6cfd\u667a",
+            "nickname": "XZ",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "181",
+            "team_id": "81",
+            "name": "\u9648\u51a0\u5b8f",
+            "nickname": "M99",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "261": [{
+            "id": "1091",
+            "team_id": "261",
+            "name": "Pyo No-a",
+            "nickname": "MP",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1101",
+            "team_id": "261",
+            "name": "Yeik Nai Zheng",
+            "nickname": "MidOne",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1111",
+            "team_id": "261",
+            "name": "Lee Sang-don",
+            "nickname": "FoReV",
+            "number": "3",
+            "img":"1.jpg"
+        }, {
+            "id": "1121",
+            "team_id": "261",
+            "name": "Clement Ivanov",
+            "nickname": "Puppey",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "1131",
+            "team_id": "261",
+            "name": "Johan \u00c5str\u00f6m",
+            "nickname": "pieliedie",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "301": [{
+            "id": "1141",
+            "team_id": "301",
+            "name": "Jonathan Berg",
+            "nickname": "Loda",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1151",
+            "team_id": "301",
+            "name": "Linus Blomdin",
+            "nickname": "Limmp",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1161",
+            "team_id": "301",
+            "name": "Jonas Lindholm",
+            "nickname": "jonnasomfan",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1171",
+            "team_id": "301",
+            "name": "Simon Haag",
+            "nickname": "Handsken",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1181", "team_id": "301", "name": "Jerry Lundkvist", "nickname": "EGM", "number": "5", "img":"1.jpg"}],
+        "111": [{
+            "id": "341",
+            "team_id": "111",
+            "name": "\u6768\u749e",
+            "nickname": "END",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "351",
+            "team_id": "111",
+            "name": "\u90d1\u6770",
+            "nickname": "ghost",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "361",
+            "team_id": "111",
+            "name": "\u5468\u6d77\u6d0b",
+            "nickname": "Yang",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "371",
+            "team_id": "111",
+            "name": "\u5f90\u6797\u68ee",
+            "nickname": "fy",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "381",
+            "team_id": "111",
+            "name": "\u6881\u53d1\u660e",
+            "nickname": "ddc",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "311": [{
+            "id": "1191",
+            "team_id": "311",
+            "name": "Roman Fominok",
+            "nickname": "Resolut1on",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1201",
+            "team_id": "311",
+            "name": "Aliwi Omar",
+            "nickname": "w33",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1211",
+            "team_id": "311",
+            "name": "David Tan",
+            "nickname": "MoonMeander",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1221",
+            "team_id": "311",
+            "name": "Rasmus Filipsen",
+            "nickname": "MiSeRy Captain",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1231", "team_id": "311", "name": "Martin Sazdov", "nickname": "Saksa", "number": "5", "img": "1.jpg"}],
+        "241": [{
+            "id": "791",
+            "team_id": "241",
+            "name": "\u5b59\u6b63",
+            "nickname": "Agressif",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "801",
+            "team_id": "241",
+            "name": "\u738b\u6615",
+            "nickname": "Nono",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "811",
+            "team_id": "241",
+            "name": "\u767d\u5e06",
+            "nickname": "rOtk",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "821",
+            "team_id": "241",
+            "name": "\u5f90\u5e1c",
+            "nickname": "hym",
+            "number": "4",
+            "img":"1.jpg"
+        }, {"id": "831", "team_id": "241", "name": "\u5362\u8d85", "nickname": "Fenrir", "number": "5", "img": "1.jpg"}],
+        "231": [{
+            "id": "691",
+            "team_id": "231",
+            "name": "\u82cf\u78ca",
+            "nickname": "Flyby",
+            "number": "1",
+            "img":"1.jpg"
+        }, {
+            "id": "751",
+            "team_id": "231",
+            "name": "\u9ad8\u632f\u96c4",
+            "nickname": " Shade",
+            "number": "2",
+            "img":"1.jpg"
+        }, {
+            "id": "761",
+            "team_id": "231",
+            "name": "\u6797\u8bd7\u6d0b",
+            "nickname": "June",
+            "number": "3",
+            "img":"1.jpg"
+        }, {
+            "id": "721",
+            "team_id": "231",
+            "name": "\u859b\u5fd7\u5ddd",
+            "nickname": "September\u7384\u6708",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "731",
+            "team_id": "231",
+            "name": "\u8096\u4f5c\u4e49",
+            "nickname": "Demons",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "321": [{
+            "id": "1241",
+            "team_id": "321",
+            "name": "Marc Polo Luis Fausto",
+            "nickname": "Raven",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1251",
+            "team_id": "321",
+            "name": "Chai Yee Fung",
+            "nickname": "Mushi",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1261",
+            "team_id": "321",
+            "name": "Chong Xin Khoo",
+            "nickname": "Ohaiyo",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1271",
+            "team_id": "321",
+            "name": "Nico Barcelon",
+            "nickname": "eyyou",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1281", "team_id": "321", "name": "Jimmy Ho", "nickname": "DeMoN", "number": "5", "img":"1.jpg"}],
+        "331": [{
+            "id": "1291",
+            "team_id": "331",
+            "name": "Lasse Urpalainen",
+            "nickname": "MATUMBAMAN",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1301",
+            "team_id": "331",
+            "name": "Amer Al-Barkawi",
+            "nickname": "Miracle-",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1311",
+            "team_id": "331",
+            "name": "Ivan Borislavov",
+            "nickname": "MinD_ContRoL",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1321",
+            "team_id": "331",
+            "name": "Kuro Salehi Takhasomi",
+            "nickname": "KuroKy Captain",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1331", "team_id": "331", "name": "Kanishka Sosale", "nickname": "BuLba", "number": "5", "img":"1.jpg"}],
+        "171": [{
+            "id": "391",
+            "team_id": "171",
+            "name": "\u891a\u6cfd\u5b87",
+            "nickname": "Shadow",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "401",
+            "team_id": "171",
+            "name": "\u5468\u6768",
+            "nickname": "\u8df3\u5200\u8df3\u5200\u4e36",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "411",
+            "team_id": "171",
+            "name": "\u5f20\u777f\u8fbe",
+            "nickname": "faith_bian",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "421",
+            "team_id": "171",
+            "name": "\u674e\u9e4f",
+            "nickname": "iceice",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "431",
+            "team_id": "171",
+            "name": "\u5f20\u61ff\u840d",
+            "nickname": "y\u4e36",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "341": [{
+            "id": "1341",
+            "team_id": "341",
+            "name": "Dmitry Minenkov",
+            "nickname": "Ditya Ra",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1351",
+            "team_id": "341",
+            "name": "Danil Ishutin",
+            "nickname": "Dendi",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1361",
+            "team_id": "341",
+            "name": "Victor Nigrini",
+            "nickname": "GeneRaL",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1371",
+            "team_id": "341",
+            "name": "Akbar Butaev",
+            "nickname": "SoNNeikO",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1381", "team_id": "341", "name": "Ivan Antonov", "nickname": "ArtStyle", "number": "5", "img": "1.jpg"}],
+        "181": [{
+            "id": "441",
+            "team_id": "181",
+            "name": "\u5f20\u6210\u4fca",
+            "nickname": "Paparazi\u706c",
+            "number": "1",
+            "img":"1.jpg"
+        }, {
+            "id": "451",
+            "team_id": "181",
+            "name": "\u8bb8\u5b50\u6668",
+            "nickname": "Sakata",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "461",
+            "team_id": "181",
+            "name": "\u6768\u6653\u4e1c",
+            "nickname": "InJuly",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "471",
+            "team_id": "181",
+            "name": "\u9ad8\u5929\u9e4f",
+            "nickname": "dogf1ghts",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "481",
+            "team_id": "181",
+            "name": "\u82cf\u9e4f",
+            "nickname": "super",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "351": [{
+            "id": "1391",
+            "team_id": "351",
+            "name": "Adrian Kryeziu",
+            "nickname": "Era",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1401",
+            "team_id": "351",
+            "name": "Max Broecker",
+            "nickname": "qojqva",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1411",
+            "team_id": "351",
+            "name": "Maurice Gutmann",
+            "nickname": "KheZu",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1421",
+            "team_id": "351",
+            "name": "Yazied Jaradat",
+            "nickname": "YapzOr",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "1431",
+            "team_id": "351",
+            "name": "Troels Nielsen",
+            "nickname": "syndereN",
+            "number": "5",
+            "img":"1.jpg"
+        }],
+        "251": [{
+            "id": "841",
+            "team_id": "251",
+            "name": "\u5f90\u701a",
+            "nickname": "uuu9",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "851",
+            "team_id": "251",
+            "name": "\u5b8b\u6df3",
+            "nickname": "Sccc",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "861",
+            "team_id": "251",
+            "name": "Damien Chock",
+            "nickname": "Kpii",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "871",
+            "team_id": "251",
+            "name": "\u80e1\u826f\u667a",
+            "nickname": "kaka",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "881",
+            "team_id": "251",
+            "name": "\u66fe\u5b8f\u8fbe",
+            "nickname": "Faith",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "191": [{
+            "id": "491",
+            "team_id": "191",
+            "name": "\u8c2d\u529b\u5609",
+            "nickname": "JiaJia",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "501",
+            "team_id": "191",
+            "name": "\u6768\u4ed5\u8c6a",
+            "nickname": "MaoMao",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "511",
+            "team_id": "191",
+            "name": "\u5f6d\u8d85",
+            "nickname": "kubo",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "521",
+            "team_id": "191",
+            "name": "\u7f57\u8d4b\u88d5",
+            "nickname": "\u6298\u7eb8\u6298\u7eb8",
+            "number": "4",
+            "img":"1.jpg"
+        }, {
+            "id": "531",
+            "team_id": "191",
+            "name": "\u9a6c\u9a8f\u9a79",
+            "nickname": "XiaoXiaoSala",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "361": [{
+            "id": "1441",
+            "team_id": "361",
+            "name": " John Linuel Abanto",
+            "nickname": "Teehee",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1451",
+            "team_id": "361",
+            "name": "Carlo Palad",
+            "nickname": "Kuku",
+            "number": "2",
+            "img":"1.jpg"
+        }, {
+            "id": "1461",
+            "team_id": "361",
+            "name": "Samson Solomon Enojosa Hidalgo",
+            "nickname": "Sam_H",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1471",
+            "team_id": "361",
+            "name": "Ryo Hasegawa",
+            "nickname": "ryOyr",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1481", "team_id": "361", "name": "Mark Pilar", "nickname": "Cast", "number": "5", "img": "1.jpg"}],
+        "151": [{
+            "id": "191",
+            "team_id": "151",
+            "name": "\u8d75\u821c\u8015",
+            "nickname": "qd",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "201",
+            "team_id": "151",
+            "name": "\u91d1\u5fd7\u610f",
+            "nickname": "\u5f71",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "211",
+            "team_id": "151",
+            "name": "\u7f57\u6bb7\u742a",
+            "nickname": "Xi",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "221",
+            "team_id": "151",
+            "name": "\u848b\u4e1c\u660a",
+            "nickname": "JDH",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "231",
+            "team_id": "151",
+            "name": "\u5b5f\u5b50\u7426",
+            "nickname": "\u4f5e\u81e3",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "371": [{
+            "id": "1491",
+            "team_id": "371",
+            "name": "Khim Villafuerte",
+            "nickname": "Gabbi",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "1501",
+            "team_id": "371",
+            "name": "Abed Yusop",
+            "nickname": "Abed",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "1511",
+            "team_id": "371",
+            "name": "Rafael Sicat Palo",
+            "nickname": "Rapy",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "1521",
+            "team_id": "371",
+            "name": "Djardel Jicko B. Mampusti",
+            "nickname": "DJ",
+            "number": "4",
+            "img": "1.jpg"
+        }, {"id": "1531", "team_id": "371", "name": "Kimuel Rodis", "nickname": "Kim0", "number": "5", "img": "1.jpg"}],
+        "161": [{
+            "id": "241",
+            "team_id": "161",
+            "name": "\u8303\u9038\u8f69",
+            "nickname": "Fan",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "251",
+            "team_id": "161",
+            "name": "\u5218\u7545",
+            "nickname": "Freeze",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "261",
+            "team_id": "161",
+            "name": "\u80e1\u68ee",
+            "nickname": "Sen",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "271",
+            "team_id": "161",
+            "name": "\u80e1\u5fd7\u6bc5",
+            "nickname": "yxb",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "281",
+            "team_id": "161",
+            "name": "\u65b9\u65ed",
+            "nickname": "Ran",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "221": [{
+            "id": "641",
+            "team_id": "221",
+            "name": "\u8d75\u5b50\u661f",
+            "nickname": "XinQ",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "651",
+            "team_id": "221",
+            "name": "\u5510\u667a\u777f",
+            "nickname": "897",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "661",
+            "team_id": "221",
+            "name": "\u5e84\u6c38\u798f",
+            "nickname": "xiaofu",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "671",
+            "team_id": "221",
+            "name": "\u5468\u665f\u8d85",
+            "nickname": "shaker",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "681",
+            "team_id": "221",
+            "name": "\u8d75\u5609\u5f6c",
+            "nickname": "\u79c0\u79c0",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "211": [{
+            "id": "591",
+            "team_id": "211",
+            "name": "\u6bb7\u5609\u4fca",
+            "nickname": "LuLu",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "601",
+            "team_id": "211",
+            "name": "\u5f6d\u4ec1\u6770",
+            "nickname": "PIAO",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "611",
+            "team_id": "211",
+            "name": "\u5b59\u5c24\u5609",
+            "nickname": "Red",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "621",
+            "team_id": "211",
+            "name": "\u738b\u7eed",
+            "nickname": "LAOA",
+            "number": "4",
+            "img":"1.jpg"
+        }, {
+            "id": "631",
+            "team_id": "211",
+            "name": "\u5360\u8000\u6768",
+            "nickname": "\u5c0f\u90ed\u5609",
+            "number": "5",
+            "img": "1.jpg"
+        }],
+        "201": [{
+            "id": "541",
+            "team_id": "201",
+            "name": "\u674e\u6625\u6ce2",
+            "nickname": "Gintoki",
+            "number": "1",
+            "img": "1.jpg"
+        }, {
+            "id": "551",
+            "team_id": "201",
+            "name": "\u5f20\u5bb6\u8c79",
+            "nickname": "Shining",
+            "number": "2",
+            "img": "1.jpg"
+        }, {
+            "id": "561",
+            "team_id": "201",
+            "name": "\u6731\u8fea",
+            "nickname": "judy",
+            "number": "3",
+            "img": "1.jpg"
+        }, {
+            "id": "571",
+            "team_id": "201",
+            "name": "\u9ec4\u6d2a\u9711",
+            "nickname": "\u963f\u9999",
+            "number": "4",
+            "img": "1.jpg"
+        }, {
+            "id": "581",
+            "team_id": "201",
+            "name": "\u4e8e\u5f6c",
+            "nickname": "Light ",
+            "number": "5",
+            "img":"1.jpg"
+        }]
+    };</script>
+    <!--插件引入-->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+
+
+
+    <script src="js/indexnew.js"></script>
+    <script src="js/dota2_common_footer.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

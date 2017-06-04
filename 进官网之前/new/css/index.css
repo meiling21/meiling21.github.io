@@ -1,0 +1,172 @@
+﻿/*newcomer css---20161121
+
+*/
+body {
+	background: #000;
+	margin: 0 !important;
+	font-family:"Microsoft YaHei", "宋体", Arial, Helvetica, sans-serif; 
+}
+.content-wrap {
+	width: 100%;
+	min-width: 1200px;
+	margin: 0 auto;
+}
+.subcon1 {
+	background: url('../images/bg_1121_01.jpg') no-repeat top center;
+	height: 995px;
+	overflow: hidden;
+}
+.subcon1 .title{
+	color: #fff;
+	font-size: 59px;
+	text-align: center;
+	margin-top: 125px;
+	margin-bottom: 30px;
+	line-height: 1.2
+}
+.subcon1 .legend{
+	color: #fff;
+	font-size: 24px;
+	width: 865px;
+	margin: 0 auto;
+	line-height: 1.5;
+	text-align: center;
+}
+.videolink {
+	background: url(../images/btn-play.png) 0 0 no-repeat;
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin-top: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+}
+.videolink:hover{
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+}
+.subcon2 {
+	background: url("../images/bg_1121_02.jpg") no-repeat top center;
+	height: 736px;
+	overflow: hidden;
+}
+.subcon3 {
+	background: url("../images/bg_1121_03.jpg") no-repeat top center;
+	height: 736px;
+	overflow: hidden;
+}
+.subcon4 {
+	background: url("../images/bg_1121_04.jpg") no-repeat top center;
+	height: 733px;
+	overflow: hidden;
+	position: relative;
+}
+#lightcase-case {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+	display: none;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-top: -226px;
+	margin-left: -403px;
+	padding: 18px 16px 18px 15px;
+	background: url('../images/bg_v.jpg') no-repeat top center !important;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+#lightcase-case .lightcase-content{
+	background-color: #000;
+}
+#lightcase-case .lightcase-content *{
+	vertical-align: middle;
+}
+#lightcase-case.fadeIn{
+    opacity:1;
+    filter:alpha(opacity=100);
+}
+video {
+	width: 726px !important;
+	background: #110707;
+	height: 406px !important;
+	overflow: hidden;
+	background-color: #000;
+}
+.lightcase-icon-close {
+	position: absolute;
+	top: 0;
+	height: 42px;
+	width: 42px;
+	background: url('../images/bg_close.png') no-repeat top center;
+	right: -50px;
+	text-decoration: none;
+	text-indent: 1000em;
+}
+.link1 {
+	background: url('../images/link1_1121.png') no-repeat top center;
+	display: block;
+	width: 246px;
+	height: 66px;
+	position: absolute;
+	left: 50%;
+	top: 384px;
+	margin-left: -550px;
+	cursor: pointer;
+}
+.link1:hover {
+	background-position: 0 -66px;
+}
+.link2 {
+	background: url('../images/link2_1121.png') no-repeat top center;
+	display: block;
+	width: 243px;
+	height: 66px;
+	position: absolute;
+	left: 50%;
+	top: 384px;
+	margin-left: 290px;
+	cursor: pointer;
+}
+.link2:hover {
+	background-position: 0 -66px;
+}
+#lightcase-overlay {
+	transition: All 0.4s ease-in-out;
+	-webkit-transition: All 0.4s ease-in-out;
+	-moz-transition: All 0.4s ease-in-out;
+	-o-transition: All 0.4s ease-in-out;
+    background-color: #000;
+    opacity: 0;
+    filter: alpha(opacity=0) ;
+
+}
+#lightcase-overlay.fadeIn{
+    opacity:0.7;
+    filter:alpha(opacity=70);
+}
+.link2_hover {
+	background: url('../images/link2_1121_hover.jpg') no-repeat top center;
+	display: none;
+}
+.link1_hover {
+	background: url('../images/link1_1121_hover.jpg') no-repeat top center;
+	display: none;
+}
+.Dota2dialogWrap .title-passport {
+	margin: 0;
+	font-weight: 400;
+}
+.bottom{
+	min-width: 1200px;
+}
+img {border:none;}

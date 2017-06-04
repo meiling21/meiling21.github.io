@@ -1,0 +1,2059 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>活动专题 - DOTA2 - 刀塔官方网站 - 全球顶级竞技 唯一正统续作</title>
+    <link rel="stylesheet" href="CSS/base.css"/>
+    <link rel="stylesheet" href="CSS/ActivityCenter.css"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="../css/logon.css"/>
+    <style></style>
+    <!--插入音乐-->
+    <EMBED src="music/Tracy Bush - War(Intro Cue) - intro.mp3" loop="-1" width="0" height="0">
+</head>
+
+
+<script src="JS/jquery-1.12.1.js"></script>
+<script src="JS/common.js"></script>
+<script src="JS/ActivityCenter.js"></script>
+<script src="../js/logon.js"></script>
+<body>
+<!--导航部分-->
+
+<div id="mask_logon"></div>
+<!--登录框出现时的遮挡层-->
+<!--头部导航开始-->
+<div class="header">
+    <div class="w nav" id="nav">
+        <!-- 右侧导航开始-->
+        <div class="nav_left fl">
+            <div class="nav_logo"><a href="#">Dota2</a></div>
+            <div class="right_list" id="mousePosition">
+                <ul>
+                    <li>
+                        <a href="../index.html"><span class="sp1">首页</span><span class="sp2">HOME</span></a>
+
+                        <div class="home">
+                            <p><a href="#">品牌站</a></p>
+
+                            <p><a href="#">个人中心</a></p>
+
+                            <p><a href="#">秘密商店</a></p>
+
+                            <p><a href="#">玩家工坊</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sp1">资讯</span><span class="sp2">NEWS</span></a>
+
+                        <div class="newsPosition">
+                            <p><a href="#">官方新闻</a></p>
+
+                            <p><a href="#">赛事新闻</a></p>
+
+                            <p><a href="#">更新日志</a></p>
+
+                            <p><a href="#">游戏攻略</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sp1">赛事</span><span class="sp2">MATCH</span></a>
+
+                        <div class="match_center">
+                            <p><a href="#">赛事中心</a></p>
+
+                            <p><a href="#">活动中心</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sp1">资料</span><span class="sp2">DATA</span></a>
+
+                        <div class="data">
+                            <p><a href="../赵嘉/shadow_fiend.html">英雄资料</a></p>
+
+                            <p><a href="#">物品资料</a></p>
+
+                            <p><a href="#">视频中心</a></p>
+
+                            <p><a href="#">自定义地图</a></p>
+
+                            <p><a href="#">新人引导</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sp1">服务</span><span class="sp2">SERVICE</span></a>
+
+                        <div class="service">
+                            <p><a href="#">客服中心</a></p>
+
+                            <p><a href="#">官方论坛</a></p>
+
+                            <p><a href="#">新浪微博</a></p>
+
+                            <p><a href="#">网吧特权</a></p>
+
+                            <p><a href="#">通行证查证</a></p>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="sp1">下载</span><span class="sp2">DOWN</span></a>
+
+                        <div class="down">
+                            <p><a href="#">游戏下载</a></p>
+
+                            <p><a href="#">刀塔助手</a></p>
+
+                            <p><a href="#">精美壁纸</a></p>
+
+                            <p><a href="#">官方漫画</a></p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右侧导航结束-->
+
+        <!-- 左侧导航开始-->
+        <div class="nav_right fr" id="nav_right">
+            <i></i>
+            <span>您好，请 <a href="#" id="aLogon">登录</a></span>
+            <s></s>
+
+            <div class="pstDiv">
+                <span class="userHint">登录后可查看账号信息</span>
+                <span class="pstDiv_line"></span>
+                <span class="X">x</span>
+            </div>
+            <!-- 登录页开始-->
+
+            <div id="logon">
+                <div class="center">
+                    <div id="txt_box">
+                        <input type="button" value="" class="btn1"/>
+                        <input type="text" placeholder="电子邮箱地址/手机号" value="" class="txt1" id="userName"/>
+                    </div>
+                    <div id="pwd_box">
+                        <input type="button" value="" class="btn2"/>
+                        <input type="password" placeholder="请输入您的密码" value="" class="txt2" id="pwd"/>
+
+                        <div id="inpSp"></div>
+                    </div>
+                    <div class="flFr clearfix">
+                        <div class="fl" id="fl">
+                            <i class="check" id="check">
+                                <span id="sp"></span>
+                            </i>
+                            <em>下次自动登录</em>
+                        </div>
+                        <div class="fr">
+                            <a href="###">忘记密码？</a>
+                        </div>
+                    </div>
+
+                    <input type="button" value="登&nbsp;&nbsp; 录" id="center_btn"/>
+
+                    <div id="center_bom"><a href="###">完美神盾登录</a></div>
+                    <div id="btn_p">
+                        <p><a href="###" class="p_a">免费注册完美通行证账号</a></p>
+
+                        <p><a href="###" class="p_a">使用DOTA2账号找回完美通行证</a></p>
+                    </div>
+                    <!-- 关闭X-->
+                    <s id="close"></s>
+
+                </div>
+            </div>
+
+            <!-- 登录页结束-->
+        </div>
+        <!-- 左侧导航结束-->
+    </div>
+</div>
+<!--整体部分-->
+<div class="main-content">
+    <!--大图片部分-->
+    <div class="banner">
+        <a href="#" alt="大广告"></a><!--网页大图-->
+    </div>
+    <div class="w"><!--版心-->
+        <div class="video">
+            <div class="video-top"><!--视频导航-->
+                <ul>
+                    <li id="top1"><a href="javascript:void(0)">综合专题</a></li>
+                    <div class="line"></div>
+                    <li id="top2"><a href="javascript:void(0)" class="color-blue">活动专题</a></li>
+                    <div class="line"></div>
+                    <li id="top3"><a href="javascript:void(0)">版本专题</a></li>
+                    <div class="line"></div>
+                    <li id="top4"><a href="javascript:void(0)">赛事专题</a></li>
+                    <div class="line"></div>
+                    <li id="top5"><a href="javascript:void(0)">其他专题</a></li>
+                </ul>
+            </div>
+            <div class="video-content clearfix" id="video-content"><!--视频内容-->
+                <div class="inner clearfix" id="vd">
+                    <div class="main-video">
+                        <div class="s-video"><!--展示部分-->
+                            <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC专属神秘商店开启限时抢购</p>
+
+                                <p class="p2">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video"><!--隐藏部分-->
+                            <p class="p3">DAC专属神秘商店开启限时抢购</p>
+
+                            <p class="p4">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC互动指南正式上线，全民免费参与</p>
+
+                                <p class="p2">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">DAC互动指南正式上线，全民免费参与</p>
+
+                            <p class="p4">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，赶快来参与吧！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">拯救者杯完美世界DOTA2高校联赛</p>
+
+                                <p class="p2">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">拯救者杯完美世界DOTA2高校联赛</p>
+
+                            <p class="p4">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/ceaf3b2fa67e71e9fa5381be6213c0051490177276.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                                <p class="p2">唯他可可助力DOTA2亚洲邀请赛</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p4">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/55377e68eed10d2902539395433c55281479708441.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016中国DOTA2年度人物评选（已结束）</p>
+
+                                <p class="p2">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016中国DOTA2年度人物评选（已结束）</p>
+
+                            <p class="p4">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。届时会有多...</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a49d08bf8321ec725d47a11d3a0bd7691475745568.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016秋季勇士联赛上线</p>
+
+                                <p class="p2">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016秋季勇士联赛上线</p>
+
+                            <p class="p4">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/2d795bd6a86cea5216160416661a6d3e1473301333.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                                <p class="p2">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                            <p class="p4">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得两次抽奖机会。每个玩家最... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/654bed6471935ea16d2aaae20518467d1469868660.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016年冠军之神盾登记领取（已结束）</p>
+
+                                <p class="p2">2016年冠军之神盾登记领取</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016年冠军之神盾登记领取（已结束）</p>
+
+                            <p class="p4">2016年冠军之神盾登记领取</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/f72c63a3f433b3e7251a6f7e10d9ca301469868452.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">全新不朽物品和自定义技能特效（已下架）</p>
+
+                                <p class="p2">不朽宝藏 III 正式更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">全新不朽物品和自定义技能特效（已下架）</p>
+
+                            <p class="p4">不朽宝藏 III 正式更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/b731243c2fd1d529c51c180ed2ebc3511472710032.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                                <p class="p2">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                            <p class="p4">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/c3384f80b1f63bd9b083018caf5dc5761472710097.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">中国区预选赛精彩瞬间回顾</p>
+
+                                <p class="p2">中国区预选赛精彩瞬间回顾</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p4">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a2ff5e7393da781f06bf5df8321c859e1472716414.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛互动指南更新（已结束）</p>
+
+                                <p class="p2">2016国际邀请赛互动指南更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛互动指南更新（已结束）</p>
+
+                            <p class="p4">2016国际邀请赛互动指南更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/77c049df2747709525b77a56d370e7fc1472716522.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                                <p class="p2">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                            <p class="p4">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，如果你想让自己的大本营... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛分组</p>
+
+                                <p class="p2">2016国际邀请赛公开赛分组</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p4">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛报名</p>
+
+                                <p class="p2">2016国际邀请赛公开赛报名</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p4">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                </div>
+                <div class="inner clearfix" id="vd1">
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/2d795bd6a86cea5216160416661a6d3e1473301333.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                                <p class="p2">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                            <p class="p4">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得两次抽奖机会。每个玩家最... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/654bed6471935ea16d2aaae20518467d1469868660.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016年冠军之神盾登记领取（已结束）</p>
+
+                                <p class="p2">2016年冠军之神盾登记领取</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016年冠军之神盾登记领取（已结束）</p>
+
+                            <p class="p4">2016年冠军之神盾登记领取</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/f72c63a3f433b3e7251a6f7e10d9ca301469868452.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">全新不朽物品和自定义技能特效（已下架）</p>
+
+                                <p class="p2">不朽宝藏 III 正式更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">全新不朽物品和自定义技能特效（已下架）</p>
+
+                            <p class="p4">不朽宝藏 III 正式更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/b731243c2fd1d529c51c180ed2ebc3511472710032.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                                <p class="p2">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                            <p class="p4">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/c3384f80b1f63bd9b083018caf5dc5761472710097.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">中国区预选赛精彩瞬间回顾</p>
+
+                                <p class="p2">中国区预选赛精彩瞬间回顾</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p4">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a2ff5e7393da781f06bf5df8321c859e1472716414.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛互动指南更新（已结束）</p>
+
+                                <p class="p2">2016国际邀请赛互动指南更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛互动指南更新（已结束）</p>
+
+                            <p class="p4">2016国际邀请赛互动指南更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/77c049df2747709525b77a56d370e7fc1472716522.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                                <p class="p2">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                            <p class="p4">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，如果你想让自己的大本营... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛分组</p>
+
+                                <p class="p2">2016国际邀请赛公开赛分组</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p4">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛报名</p>
+
+                                <p class="p2">2016国际邀请赛公开赛报名</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p4">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video"><!--展示部分-->
+                            <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC专属神秘商店开启限时抢购</p>
+
+                                <p class="p2">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video"><!--隐藏部分-->
+                            <p class="p3">DAC专属神秘商店开启限时抢购</p>
+
+                            <p class="p4">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC互动指南正式上线，全民免费参与</p>
+
+                                <p class="p2">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">DAC互动指南正式上线，全民免费参与</p>
+
+                            <p class="p4">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，赶快来参与吧！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">拯救者杯完美世界DOTA2高校联赛</p>
+
+                                <p class="p2">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">拯救者杯完美世界DOTA2高校联赛</p>
+
+                            <p class="p4">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/ceaf3b2fa67e71e9fa5381be6213c0051490177276.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                                <p class="p2">唯他可可助力DOTA2亚洲邀请赛</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p4">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/55377e68eed10d2902539395433c55281479708441.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016中国DOTA2年度人物评选（已结束）</p>
+
+                                <p class="p2">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016中国DOTA2年度人物评选（已结束）</p>
+
+                            <p class="p4">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。届时会有多...</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a49d08bf8321ec725d47a11d3a0bd7691475745568.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016秋季勇士联赛上线</p>
+
+                                <p class="p2">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016秋季勇士联赛上线</p>
+
+                            <p class="p4">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+
+                </div>
+                <div class="inner clearfix" id="vd2">
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/ceaf3b2fa67e71e9fa5381be6213c0051490177276.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                                <p class="p2">唯他可可助力DOTA2亚洲邀请赛</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p4">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/55377e68eed10d2902539395433c55281479708441.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016中国DOTA2年度人物评选（已结束）</p>
+
+                                <p class="p2">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016中国DOTA2年度人物评选（已结束）</p>
+
+                            <p class="p4">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。届时会有多...</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a49d08bf8321ec725d47a11d3a0bd7691475745568.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016秋季勇士联赛上线</p>
+
+                                <p class="p2">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016秋季勇士联赛上线</p>
+
+                            <p class="p4">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/2d795bd6a86cea5216160416661a6d3e1473301333.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                                <p class="p2">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                            <p class="p4">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得两次抽奖机会。每个玩家最... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/654bed6471935ea16d2aaae20518467d1469868660.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016年冠军之神盾登记领取（已结束）</p>
+
+                                <p class="p2">2016年冠军之神盾登记领取</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016年冠军之神盾登记领取（已结束）</p>
+
+                            <p class="p4">2016年冠军之神盾登记领取</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/f72c63a3f433b3e7251a6f7e10d9ca301469868452.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">全新不朽物品和自定义技能特效（已下架）</p>
+
+                                <p class="p2">不朽宝藏 III 正式更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">全新不朽物品和自定义技能特效（已下架）</p>
+
+                            <p class="p4">不朽宝藏 III 正式更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/b731243c2fd1d529c51c180ed2ebc3511472710032.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                                <p class="p2">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                            <p class="p4">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/c3384f80b1f63bd9b083018caf5dc5761472710097.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">中国区预选赛精彩瞬间回顾</p>
+
+                                <p class="p2">中国区预选赛精彩瞬间回顾</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p4">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a2ff5e7393da781f06bf5df8321c859e1472716414.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛互动指南更新（已结束）</p>
+
+                                <p class="p2">2016国际邀请赛互动指南更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛互动指南更新（已结束）</p>
+
+                            <p class="p4">2016国际邀请赛互动指南更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/77c049df2747709525b77a56d370e7fc1472716522.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                                <p class="p2">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                            <p class="p4">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，如果你想让自己的大本营... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛分组</p>
+
+                                <p class="p2">2016国际邀请赛公开赛分组</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p4">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛报名</p>
+
+                                <p class="p2">2016国际邀请赛公开赛报名</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p4">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video"><!--展示部分-->
+                            <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC专属神秘商店开启限时抢购</p>
+
+                                <p class="p2">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video"><!--隐藏部分-->
+                            <p class="p3">DAC专属神秘商店开启限时抢购</p>
+
+                            <p class="p4">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC互动指南正式上线，全民免费参与</p>
+
+                                <p class="p2">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">DAC互动指南正式上线，全民免费参与</p>
+
+                            <p class="p4">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，赶快来参与吧！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">拯救者杯完美世界DOTA2高校联赛</p>
+
+                                <p class="p2">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">拯救者杯完美世界DOTA2高校联赛</p>
+
+                            <p class="p4">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                </div>
+                <div class="inner clearfix" id="vd3">
+
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/77c049df2747709525b77a56d370e7fc1472716522.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                                <p class="p2">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                            <p class="p4">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，如果你想让自己的大本营... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛分组</p>
+
+                                <p class="p2">2016国际邀请赛公开赛分组</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p4">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛报名</p>
+
+                                <p class="p2">2016国际邀请赛公开赛报名</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p4">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video"><!--展示部分-->
+                            <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC专属神秘商店开启限时抢购</p>
+
+                                <p class="p2">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video"><!--隐藏部分-->
+                            <p class="p3">DAC专属神秘商店开启限时抢购</p>
+
+                            <p class="p4">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC互动指南正式上线，全民免费参与</p>
+
+                                <p class="p2">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">DAC互动指南正式上线，全民免费参与</p>
+
+                            <p class="p4">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，赶快来参与吧！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">拯救者杯完美世界DOTA2高校联赛</p>
+
+                                <p class="p2">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">拯救者杯完美世界DOTA2高校联赛</p>
+
+                            <p class="p4">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/ceaf3b2fa67e71e9fa5381be6213c0051490177276.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                                <p class="p2">唯他可可助力DOTA2亚洲邀请赛</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p4">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/55377e68eed10d2902539395433c55281479708441.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016中国DOTA2年度人物评选（已结束）</p>
+
+                                <p class="p2">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016中国DOTA2年度人物评选（已结束）</p>
+
+                            <p class="p4">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。届时会有多...</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a49d08bf8321ec725d47a11d3a0bd7691475745568.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016秋季勇士联赛上线</p>
+
+                                <p class="p2">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016秋季勇士联赛上线</p>
+
+                            <p class="p4">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/2d795bd6a86cea5216160416661a6d3e1473301333.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                                <p class="p2">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                            <p class="p4">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得两次抽奖机会。每个玩家最... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/654bed6471935ea16d2aaae20518467d1469868660.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016年冠军之神盾登记领取（已结束）</p>
+
+                                <p class="p2">2016年冠军之神盾登记领取</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016年冠军之神盾登记领取（已结束）</p>
+
+                            <p class="p4">2016年冠军之神盾登记领取</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/f72c63a3f433b3e7251a6f7e10d9ca301469868452.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">全新不朽物品和自定义技能特效（已下架）</p>
+
+                                <p class="p2">不朽宝藏 III 正式更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">全新不朽物品和自定义技能特效（已下架）</p>
+
+                            <p class="p4">不朽宝藏 III 正式更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/b731243c2fd1d529c51c180ed2ebc3511472710032.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                                <p class="p2">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                            <p class="p4">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/c3384f80b1f63bd9b083018caf5dc5761472710097.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">中国区预选赛精彩瞬间回顾</p>
+
+                                <p class="p2">中国区预选赛精彩瞬间回顾</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p4">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a2ff5e7393da781f06bf5df8321c859e1472716414.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛互动指南更新（已结束）</p>
+
+                                <p class="p2">2016国际邀请赛互动指南更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛互动指南更新（已结束）</p>
+
+                            <p class="p4">2016国际邀请赛互动指南更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                </div>
+                <div class="inner clearfix" id="vd4">
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/2d795bd6a86cea5216160416661a6d3e1473301333.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                                <p class="p2">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">参与用户问卷调查抽英雄手办（已结束）</p>
+
+                            <p class="p4">所有DOTA2用户均可参与该活动，完成问卷调查并提交可获得一次免费抽奖机会，参与上述两个问卷调查即可获得两次抽奖机会。每个玩家最... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/654bed6471935ea16d2aaae20518467d1469868660.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016年冠军之神盾登记领取（已结束）</p>
+
+                                <p class="p2">2016年冠军之神盾登记领取</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016年冠军之神盾登记领取（已结束）</p>
+
+                            <p class="p4">2016年冠军之神盾登记领取</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/f72c63a3f433b3e7251a6f7e10d9ca301469868452.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">全新不朽物品和自定义技能特效（已下架）</p>
+
+                                <p class="p2">不朽宝藏 III 正式更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">全新不朽物品和自定义技能特效（已下架）</p>
+
+                            <p class="p4">不朽宝藏 III 正式更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/b731243c2fd1d529c51c180ed2ebc3511472710032.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                                <p class="p2">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">兄弟们开黑了！老玩家回流开启（已结束）</p>
+
+                            <p class="p4">不说再见，有时更难，毕竟一起从泉水出发，说好了一起买活，说好了一起翻盘，兄弟们，回来开黑了！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/c3384f80b1f63bd9b083018caf5dc5761472710097.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">中国区预选赛精彩瞬间回顾</p>
+
+                                <p class="p2">中国区预选赛精彩瞬间回顾</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p4">中国区预选赛精彩瞬间回顾</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a2ff5e7393da781f06bf5df8321c859e1472716414.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛互动指南更新（已结束）</p>
+
+                                <p class="p2">2016国际邀请赛互动指南更新</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛互动指南更新（已结束）</p>
+
+                            <p class="p4">2016国际邀请赛互动指南更新</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/77c049df2747709525b77a56d370e7fc1472716522.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                                <p class="p2">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛线下观战地征集（已结束）</p>
+
+                            <p class="p4">DOTA2现向全国所有地区征集可用于2016国际邀请赛期间实时观战的场地，让所有热爱DOTA2的你们聚集起来，如果你想让自己的大本营... </p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛分组</p>
+
+                                <p class="p2">2016国际邀请赛公开赛分组</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p4">2016国际邀请赛公开赛分组</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/6ad9fac3c07f3e8a64562c9b8dcf59f01472716591.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016国际邀请赛公开赛报名</p>
+
+                                <p class="p2">2016国际邀请赛公开赛报名</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p4">2016国际邀请赛公开赛报名</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="#">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video"><!--展示部分-->
+                            <img src="images/69c319765fa543c962cfb94c7fc780fd1490242584.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC专属神秘商店开启限时抢购</p>
+
+                                <p class="p2">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video"><!--隐藏部分-->
+                            <p class="p3">DAC专属神秘商店开启限时抢购</p>
+
+                            <p class="p4">DAC专属神秘商店开启限时抢购，海量周边任君选购，只支持线上预定，线下提货，不邮寄。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/499fdce5411eb7f784ebc6e46f87cd5d1489989868.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">DAC互动指南正式上线，全民免费参与</p>
+
+                                <p class="p2">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">DAC互动指南正式上线，全民免费参与</p>
+
+                            <p class="p4">DAC互动指南正式上线，全民免费参与，包含战队应援祝福、全明星赛、solo赛投票、赛事预测等诸多活动，赶快来参与吧！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/87343501569ab0cc1a8f219b676c918e1490352327.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">拯救者杯完美世界DOTA2高校联赛</p>
+
+                                <p class="p2">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">拯救者杯完美世界DOTA2高校联赛</p>
+
+                            <p class="p4">拯救者杯完美世界DOTA2高校联赛，校园巡展火热开启！</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/ceaf3b2fa67e71e9fa5381be6213c0051490177276.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                                <p class="p2">唯他可可助力DOTA2亚洲邀请赛</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p4">唯他可可助力DOTA2亚洲邀请赛</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video">
+                        <div class="s-video">
+                            <img src="images/55377e68eed10d2902539395433c55281479708441.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016中国DOTA2年度人物评选（已结束）</p>
+
+                                <p class="p2">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。... </p>
+                            </div>
+
+                        </div>
+                        <div class="h-video">
+                            <p class="p3">2016中国DOTA2年度人物评选（已结束）</p>
+
+                            <p class="p4">完美世界倾力打造——完美“圣”典（暨DOTA2年度电竞颁奖”圣”典）。举办时间将定于2016年的12月17日。届时会有多...</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+                    <div class="main-video1">
+                        <div class="s-video1">
+                            <img src="images/a49d08bf8321ec725d47a11d3a0bd7691475745568.jpg" width="268" height="130"
+                                 alt=""/>
+
+                            <div class="intro">
+                                <p class="p1">2016秋季勇士联赛上线</p>
+
+                                <p class="p2">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+                            </div>
+
+                        </div>
+                        <div class="h-video1">
+                            <p class="p3">2016秋季勇士联赛上线</p>
+
+                            <p class="p4">每个级别中勇士联赛积分最高的选手将受邀参加赛季闭幕联赛——冠军联赛。</p>
+
+                            <p class="p5">
+                                <i></i>
+                                <a href="javascript:void(0)">进入专题</a>
+                            </p>
+                        </div>
+                        <!--闪出部分-->
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="video-foot"><!--页脚-->
+                <div><a href="javascript:void(0)" class="page-l"></a></div>
+                <ul>
+                    <li><a href="javascript:void(0)" class="bg-blue">1</a></li>
+                    <li><a href="javascript:void(0)">2</a></li>
+                    <li><a href="javascript:void(0)">3</a></li>
+                    <li><a href="javascript:void(0)">4</a></li>
+                    <li><a href="javascript:void(0)">5</a></li>
+                    <li><a href="javascript:void(0)">6</a></li>
+                    <li><a href="javascript:void(0)">7</a></li>
+                    <li><a href="javascript:void(0)">8</a></li>
+                </ul>
+                <div><a href="javascript:void(0)" class="page-r"></a></div>
+            </div>
+        </div>
+        <div class="service1">
+            <div class="pay">
+                <a href="javascript:void(0)" id="pay"></a>
+            </div>
+            <div class="download">
+                <a href="javascript:void(0)" id="download"></a>
+            </div>
+            <div class="zhuce">
+                <a href="javascript:void(0)" id="zhuce"></a>
+            </div>
+        </div>
+        <div class="news">
+            <div class="match">
+                <a href="javascript:void(0)"></a>
+            </div>
+            <div class="event">
+                <a href="javascript:void(0)"></a>
+            </div>
+            <div class="BBS">
+                <a href="javascript:void(0)"></a>
+            </div>
+        </div>
+
+        <div class="return">
+            <a href="javascript:void(0)"></a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script></script>
+</body>
+</html>

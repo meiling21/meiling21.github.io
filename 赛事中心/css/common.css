@@ -1,0 +1,146 @@
+﻿html,
+body {
+    min-width: 1200px;
+    min-height: 960px;
+}
+
+body {
+    background: #1b1c1f url('../images/bg.png') no-repeat top center fixed;
+    /*font-family: "Microsoft YaHei";*/
+    line-height: 1.5;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    /*font-family: "Microsoft YaHei";*/
+    font-size: 14px;
+    color: #ccc;
+}
+
+.main_container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main_container a {
+    color: #ccc;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    background: url("../images/icons.png") no-repeat top center;
+    outline: 1px solid;
+}
+
+.icon-video {
+    background-position: -18px -325px;
+}
+
+.icon-news {
+    background-position: -18px -370px;
+}
+
+.icon-cup {
+    background-position: -18px -413px;
+}
+
+.icon-arrow-left {
+    background-position: -12px -159px;
+}
+
+.icon-arrow-right {
+    background-position: -12px -94px;
+}
+
+.icon-dot {
+    background-position: -13px -240px;
+}
+
+.icon-dot-active {
+    background-position: -13px -273px;
+}
+
+.icon-delete {
+    background-position: -12px -783px;
+}
+
+.icon-close {
+    background-position: -12px -693px;
+}
+
+.icon-arrow-down {
+    background-position: -15px 0;
+}
+
+.icon-calander {
+    background-position: -10px -990px;
+}
+
+.select-container {
+    position: relative;
+    display: inline-block;
+}
+
+.select-container.down {
+    background-color: #000;
+    border-color: #08a2d4;
+    border-bottom-color: transparent;
+}
+
+.select-container .input {
+    cursor: pointer;
+}
+
+.select-container .input + i.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.select-container.down .input + i.icon {
+    background-position: -15px -50px;
+}
+
+.select-container .select {
+    position: absolute;
+    display: none;
+    top: 50px;
+    left: -1px;
+    padding-bottom: 15px;
+    width: 100%;
+    z-index: 11;
+    border-style: solid;
+    border-color: #00c0ff;
+    border-width: 0 1px 1px;
+    background-color: #000;
+}
+
+.select-container.down .select {
+    display: block;
+}
+
+.select-container .select .option {
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    border:1px solid;
+}
+
+.select-container .select .option.selected,
+.select-container .select .option:hover {
+    color: #00c0ff;
+}
+
+.no-right-margin {
+    margin-right: 0 !important;
+}

@@ -1,0 +1,1834 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="author" content="Design:; Web Layout:Zhongwei.Zhang;"/>
+	<meta name="keywords" content="DOTA2,dota,官网,英雄,数据库"/>
+	<meta name="description" content="DOTA2官方数据库提供最权威的英雄资料，最准确的英雄技能介绍，英雄出装推荐，适配的相关英雄等。"/>
+	<link rel="Shortcut Icon" href="http://www.dota2.com.cn/favicon.ico"/>
+	<link rel="bookmark" href="http://www.dota2.com.cn/favicon.ico"/>
+	<link href="css/master.css" rel="stylesheet" type="text/css"/>
+	<link href="css/hero_bar.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jq_171.js"></script>
+	<script type="text/javascript" src="js/wm.js" top="false" bottom="false"></script>
+	<script type="text/javascript" src="js/wm_dota2.js"></script>
+	<!-- <script type="text/javascript" src="js/dota2_topnav.js"></script> -->
+	<script type="text/javascript" src="js/swfobject.js"></script>
+	<script type="text/javascript">
+		function teachVideoShow(videourl) {
+			addVideo('v_src', 370, 205,
+				{
+					source: videourl,
+					wmode: 'opaque',
+					autoPlay: false,
+					startImage: 'http://www.dota2.com.cn/event/201401/herodata/images/video_newer.jpg'
+				}
+			);
+		}
+		;
+	</script>
+	<title>
+		影魔 Nevermore - 		英雄数据库 - 《DOTA2》官方网站
+	</title>
+</head>
+<body>
+<!-- <div id="dota2_topnav"></div> -->
+<script src="js/top_nav_201610.js"></script>
+<div class="bg">
+	<div class="r_bar_bg">
+				<div class="id_div" id="11">
+			<!--top-->
+			<div class="item_top clearfix">
+				<div class="top_hero_card">
+					<div><img
+							src="images/nevermore_full.png"
+							alt="影魔"/></div>
+					<p><span>影魔</span><br/>Nevermore					</p>
+				</div>
+				<div class="top_pic">
+					<iframe src="/event/201401/herodata/iframe/top_m.htm" width="459"
+							height="98"
+							allowtransparency="true" scrolling="no"
+							frameborder="0"></iframe>
+				</div>
+				<div class="top_search">
+					<!-- <div class="search_wrap">
+						<input type="text" id="search_inp" value="输入搜索内容"
+							   onfocus="if(this.value=='输入搜索内容') this.value=''"/>
+						<a id="search_a" href="#" target="_blank"><img
+								src="images/btn_search.png"/></a>
+						<script type="text/javascript" src="js/search1310.js"></script>
+					</div> -->
+					<div class="search_wrap">
+						<a class="btn_shoucang" href="javascript:void(0)" onclick="addFav()" style="float: right;">收藏</a>
+						<!-- <a class="btn_baocuo" href="${ctx}/suggest/index"
+						   target="_blank">报错/建议</a> -->
+					</div>
+				</div>
+			</div>
+			<div class="w1002">
+				<!--left-->
+				<div class="item_left">
+					<!--info-->
+					<div class="hero_info">
+						<img class="hero_b"
+							 src="images/nevermore_vert.jpg"
+							 alt="影魔"/>
+
+						<div class="hero_name"><img
+								src="images/nevermore_icon.png"/> 影魔						</div>
+						<ul class="info_ul">
+							<li class="clearfix"><span class="info_t">攻击类型：</span>
+
+								<p class="info_p"><span>远程</span>
+								</p></li>
+							<li class="clearfix"><span class="info_t">定位：</span>
+
+								<p class="info_p" id="lastEm">
+																			<span class="_btn_type" star="2"
+											  type="核心">核心</span>
+										<em>-</em>
+																			<span class="_btn_type" star="3"
+											  type="高爆发">高爆发</span>
+										<em>-</em>
+																	</p>
+							</li>
+							<li class="clearfix"><span class="info_t" style="line-height:28px">阵营：</span>
+
+								<p class="info_p zhengying_p"><img
+										src="images/dire.jpg"
+										alt="夜魇"/>
+									夜魇</p></li>
+							<li class="clearfix"><span class="info_t">其他简称：</span>
+
+								<p class="info_p">SF</p></li>
+						</ul>
+						<!--pop_type-->
+						<div class="pop_box" id="pop_type">
+							<div class="pop_type_t">
+								<span id="pop_type_name"></span>
+
+								<div id="pop_type_star"></div>
+							</div>
+							<p id="pop_type_cont"></p>
+						</div>
+					</div>
+
+					<!--property-->
+					<div class="property_box">
+						<div class="l_title">英雄属性</div>
+						<ul class="pro6_box">
+							<li>
+								<div id="pro1" >
+								</div>
+								15 + 2								<div class="pop_box">
+									<div class="pop_property_t">
+										力量									</div>
+									<p class="pop_property_cont">
+																				- 每点增加<span class="color_green">20点</span>生命值<br/>
+										- 每点提升<span class="color_green">0.03点</span>点生命回复数率<br/>
+										- 英雄每升一级获得点数：<span class="color_green">2</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div id="pro2" class="on">
+								</div>
+								20 + 2.9								<div class="pop_box">
+									<div class="pop_property_t">
+										敏捷：主要属性									</div>
+									<p class="pop_property_cont">
+																					- 每点属性增加<span class="color_green">1点</span>攻击力<br/>
+																				- 每7点增加<span class="color_green">1点</span>护甲<br/>
+										- 每点提升<span class="color_green">1点</span>攻击速度<br/>
+										- 英雄每升一级获得点数：<span class="color_green">2.9</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div id="pro3" >
+								</div>
+								18 + 2								<div class="pop_box">
+									<div class="pop_property_t">
+										智力									</div>
+									<p class="pop_property_cont">
+																				- 每点增加<span class="color_green">12点</span>魔法值上限<br/>
+										- 每点提升<span class="color_green">0.04点</span>魔法回复速率<br/>
+										- 英雄每升一级获得点数：<span class="color_green">2</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div id="pro4"></div>
+								18								<div class="pop_box">
+									<div class="pop_property_t">攻击力</div>
+									<p class="pop_property_cont">
+										- 攻击速度：<span
+											class="color_green">120</span>（2.00										秒攻击一次）<br/>
+										- 攻击伤害：<span
+											class="color_green">15											-21</span><br/>
+										- 攻击距离：<span
+											class="color_green">500</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div id="pro5"></div>
+								0								<div class="pop_box">
+									<div class="pop_property_t">护甲</div>
+									<p class="pop_property_cont">
+										- 物理防御：<span class="color_green">0</span><br/>
+										- 物理伤害抗性：<span class="color_green">9%</span><br/>
+										- 魔法伤害抗性：<span class="color_green">25%</span>
+									</p>
+								</div>
+							</li>
+							<li>
+								<div id="pro6"></div>
+								315							</li>
+						</ul>
+						<table class="level_table">
+							<tr>
+								<td align="right" id="flash_data"
+									dj="1/15/25"
+									smz="500/1060/1460"
+									mfz="266/602/842"
+									gjl="35-41/75.6-81.6/104.6-110.6"
+									gjsd="120/160.6/189.6"
+									gjjl="500/500/500"
+									hj="2/7/11">
+									等级：
+								</td>
+								<td><select id="level_select">
+										<option value="1">1级</option>
+										<option value="15">15级</option>
+										<option value="25" selected>25级</option>
+									</select></td>
+								<td align="right">
+									<!--<a href="http://db.dota2.com.cn/compare?ids=" target="_blank">与其他英雄对比</a>-->
+									<a href="#" style="background-image: none;"></a>
+								</td>
+							</tr>
+						</table>
+						<div class="item_flash">
+							<div id="item_flash"></div>
+						</div>
+						<div class="area_box">
+							<table>
+								<tr>
+									<td>视野范围：</td>
+									<td width="75"><span>1800											/800</span></td>
+									<td>攻击范围：</td>
+									<td><span>500</span></td>
+								</tr>
+								<tr>
+									<td>弹道速度：</td>
+									<td><span>1200</span></td>
+									<td>&nbsp;</td>
+									<td>&nbsp;</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<!--honor-->
+					<div class="honor_box">
+						<div class="l_title">英雄荣耀</div>
+													<div class="honor_one">
+								<table>
+									<tr>
+										<td width="40">
+											<img src="images/honor_icon.png"/>
+										</td>
+										<td>转身速率最快的英雄（1.0）。</td>
+									</tr>
+								</table>
+							</div>
+											</div>
+									</div>
+				<!--right-->
+				<div class="item_right">
+					<!--story-->
+					<div class="r_title" style="margin-top:0">故事背景</div>
+					<div class="story_box h120">
+						<div class="story_pic">
+							<a href="images/nevermore_big1.jpg"
+							   target="_blank">
+								<img
+									src="images/nevermore_big1.jpg"/>
+								<img class="fangda"
+									 src="images/fangda.png"/>
+							</a>
+						</div>
+						据说影魔奈文摩尔有着一个诗人的灵魂，事实上，他吞噬的诗人灵魂早已成千上万。千百年来，他收集了各式各样的灵魂，包括诗人，牧师，帝王，乞丐，奴隶，哲人，罪犯，当然，还有英雄。他拥有着世间所有种类的灵魂。然而没人知道他收集这些灵魂作何之用。从来没有人得以窥视影魔的魂渊之秘，他从魂渊中伸出灵魂触须，蔓延在精神位面。他是把灵魂一个个吞噬了？还是把灵魂堆积在他的影惧神殿里？又或是将灵魂浸在死灵之池中？难道他仅仅是一个被恶魔傀儡大师操纵着，通过位面裂口进入世界的傀儡？尽管众说纷纭，但根本没有人能看透他那黑暗光环下的层层邪恶。然而，如果你实在是很想知道那些灵魂的归宿，有个办法能帮你达成心愿：凡人，将你的灵魂奉献给影魔，或者等待魔王的收割！					</div>
+					<div class="silide_r"><span class="slide_span">[展开+]</span></div>
+					<!--video-->
+					<a name="hero_01" id="hero_01"></a>
+
+					<div class="r_title">视频/攻略</div>
+					<div class="video_wrap clearfix">
+						<!--v-->
+						<div class="video_box">
+															<ul class="v_tab clearfix">
+																			<li videourl="http://dota2.dl.wanmei.com/dota2/patch/shadow_fiend_basic.flv">新手教学</li>
+																	</ul>
+								<div class="v_cont">
+									<div id="v_src"></div>
+								</div>
+								<script type="text/javascript">
+									$('.v_tab li').eq(0).addClass('on');
+									teachVideoShow($('.v_tab li').eq(0).attr('videourl'));
+								</script>
+													</div>
+						<!--gl-->
+						<div class="gl_box">
+							<div class="gl_title">攻略文章</div>
+															<div class="gl_one">
+									<div class="gl_one_t">
+										<a href="http://www.dota2.com.cn/raiders/newer/20131101/152785.shtml"
+										   target="_blank">DOTA2英雄攻略影魔--悲伤的灵魂收割者</a>
+									</div>
+									<div class="gl_one_wrap">
+										<a href="http://www.dota2.com.cn/raiders/newer/20131101/152785.shtml" target="_blank"><img
+												src="images/10251392625685227.jpg"/></a>
+
+										<p><a href="http://www.dota2.com.cn/raiders/newer/20131101/152785.shtml"
+											  target="_blank">据说影魔奈文摩尔有着一个诗人的灵魂，事实上，他吞噬的诗人灵魂早已成千上万。千百年来，他收集了各式各样的灵魂，包括诗人，牧师，帝王，乞 丐，奴隶，哲人，罪犯，当然，还有英雄。</a></p>
+									</div>
+								</div>
+															<div class="gl_one">
+									<div class="gl_one_t">
+										<a href="http://www.dota2.com.cn/raiders/step/20131101/152791.shtml"
+										   target="_blank">死亡阴影PerfectisShit-影魔（SF）攻略</a>
+									</div>
+									<div class="gl_one_wrap">
+										<a href="http://www.dota2.com.cn/raiders/step/20131101/152791.shtml" target="_blank"><img
+												src="images/10251392625741452.jpg"/></a>
+
+										<p><a href="http://www.dota2.com.cn/raiders/step/20131101/152791.shtml"
+											  target="_blank">影魔是一名敏捷型英雄，远攻压制，前期高爆发，后期可以作为核心。他战斗的时候，通过吸收灵魂来增强自己的力量，通过释放吸收的灵魂来杀死敌人!</a></p>
+									</div>
+								</div>
+													</div>
+					</div>
+					<!--skill-->
+					<a name="hero_02" id="hero_02"></a>
+
+					<div class="r_title">技能介绍</div>
+					<div class="skill_box">
+						<dl id="focus_dl">
+							<dt>
+								<a href="javascript:void(0)" class="btn_left"></a>
+							<ul>
+																	<li><img
+											src="images/nevermore_shadowraze1_hp1.png"/>毁灭阴影									</li>
+																	<li><img
+											src="images/nevermore_shadowraze2_hp1.png"/>毁灭阴影									</li>
+																	<li><img
+											src="images/nevermore_shadowraze3_hp1.png"/>毁灭阴影									</li>
+																	<li><img
+											src="images/nevermore_necromastery_hp1.png"/>支配死灵									</li>
+																	<li><img
+											src="images/nevermore_dark_lord_hp1.png"/>魔王降临									</li>
+																	<li><img
+											src="images/nevermore_requiem_hp1.png"/>魂之挽歌									</li>
+															</ul>
+							<a href="javascript:void(0)" class="btn_right"></a>
+							</dt>
+															<dd jnxs="0">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_shadowraze1_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>毁灭阴影</span><br/>
+												影魔对其正前方区域发出毁灭能量，对该区域中的敌人造成伤害。											</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：90</div>
+												<div class="icon_lq">
+													冷却时间：10</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>无目标												</li>
+																									<li><span
+															class="color_white">伤害类型:</span>魔法													</li>
+																																																																												<li><span
+																class="color_white">距离：</span>200														</li>
+																																																													</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_shadowraze.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v0"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">影魔标志性的灵魂收割手段。</div>
+								</dd>
+															<dd jnxs="1">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_shadowraze2_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>毁灭阴影</span><br/>
+												影魔对其正前方区域发出毁灭能量，对该区域中的敌人造成伤害。											</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：90</div>
+												<div class="icon_lq">
+													冷却时间：10</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>无目标												</li>
+																									<li><span
+															class="color_white">伤害类型:</span>魔法													</li>
+																																																																												<li><span
+																class="color_white">距离：</span>450														</li>
+																																																													</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_shadowraze.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v1"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">影魔标志性的灵魂收割手段。</div>
+								</dd>
+															<dd jnxs="2">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_shadowraze3_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>毁灭阴影</span><br/>
+												影魔对其正前方区域发出毁灭能量，对该区域中的敌人造成伤害。											</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：90</div>
+												<div class="icon_lq">
+													冷却时间：10</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>无目标												</li>
+																									<li><span
+															class="color_white">伤害类型:</span>魔法													</li>
+																																																																												<li><span
+																class="color_white">距离：</span>700														</li>
+																																																													</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_shadowraze.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v2"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">影魔标志性的灵魂收割手段。</div>
+								</dd>
+															<dd jnxs="3">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_necromastery_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>支配死灵</span><br/>
+												影魔窃取被他杀死的单位的灵魂，获得额外的攻击力。如果被杀死的单位是一个英雄，他将获得12个灵魂。影魔死亡时将会有一半的灵魂逃离他的束缚。可用神杖升级。											</p>
+																							<p class="color_green">
+													反补、杀死中立生物也能收集到灵魂。												</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：0</div>
+												<div class="icon_lq">
+													冷却时间：0</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>被动												</li>
+																																																			<li><span
+																class="color_white">单个灵魂的攻击力加成：</span>2														</li>
+																																																																													<li><span
+																class="color_white">灵魂上限：</span>18/24/30/36														</li>
+																																																																																																						<li><span
+																class="color_white">神杖升级灵魂上限：</span>22/30/38/46														</li>
+																																				</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_necromastery.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v3"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">被收割的亡魂在影魔体内的魂渊盘旋，让影魔能不断的增加他的灵魂收藏。</div>
+								</dd>
+															<dd jnxs="4">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_dark_lord_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>魔王降临</span><br/>
+												影魔的出现使得周围的敌人护甲降低。											</p>
+																							<p class="color_green">
+													与其他降低护甲的技能和光环完全叠加。												</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：0</div>
+												<div class="icon_lq">
+													冷却时间：0</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>被动, 光环												</li>
+																																																			<li><span
+																class="color_white">护甲削弱：</span>-3/-4/-5/-6														</li>
+																																																				<li><span
+																class="color_white">作用范围：</span>900														</li>
+																																				</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_presence_of_the_dark_lord.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v4"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">即使只是在影魔周围游荡，灵魂也会被侵蚀。</div>
+								</dd>
+															<dd jnxs="5">
+									<div class="skill_wrap">
+										<img class="skill_b"
+											 src="images/nevermore_requiem_hp1.png"/>
+
+										<div class="skill_info">
+											<p class="skill_intro">
+												<span>魂之挽歌</span><br/>
+												影魔聚集捕获的灵魂，以多道魔能的形式释放。若距离影魔过近将受到数道魔能的伤害。受到魂之挽歌伤害的敌方单位同时也会受到移动速度和攻击速度均有所下降的效果。每2个通过支配死灵收集的灵魂会为魂之挽歌创造一道魔能。死亡时会自动释放魂之挽歌，不占用主动大招的冷却时间。可用神杖升级。											</p>
+																							<p class="color_green">
+													根据影魔收集的灵魂数量，每2个灵魂会产生1道伤害波，伤害波数量上限为18道（神杖升级后为23道）。</br>魂之挽歌的移动速度减缓和攻击力降低效果均无视技能免疫。												</p>
+																						<div class="xiaohao_wrap">
+												<div class="icon_xh">
+													魔法消耗：150/175/20</div>
+												<div class="icon_lq">
+													冷却时间：120/110/10</div>
+											</div>
+											<ul class="skill_ul clearfix">
+												<li><span
+														class="color_white">技能:</span>无目标												</li>
+																									<li><span
+															class="color_white">伤害类型:</span>魔法													</li>
+																																																			<li><span
+																class="color_white">施法延迟：</span>1.67														</li>
+																																																																													<li><span
+																class="color_white">移动速度减少：</span>-25%														</li>
+																																																																													<li><span
+																class="color_white">攻击力降低：</span>-50%														</li>
+																																																				<li><span
+																class="color_white">降攻和减速持续时间：</span>5.0														</li>
+																																																																																																																																																																																																										<li><span
+																class="color_white">神杖升级回归时治疗量：</span>100%														</li>
+																																																				<li><span
+																class="color_white">神杖升级回归伤害：</span>40%														</li>
+																																				</ul>
+											<div class="skill_v">
+												<img class="btn_skill_v"
+													 src="images/btn_skill_v.png"
+													 videourl="http://dota2.dl.wanmei.com/dota2/video/abilities/shadow_fiend_requiem_of_souls.mp4"/>
+
+												<div class="skill_v_box">
+													<div class="skill_v_bg" id="skill_v5"></div>
+													<span class="hide_v">[收起]</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="skill_bot">那些死者的灵魂被捕获，用来毁灭他们生前的盟友。</div>
+								</dd>
+													</dl>
+					</div>
+					<!--point-->
+											<div class="r_title">推荐加点</div>
+						<div class="r_box">
+																								<div class="point_wrap clearfix">
+										<img class="skill_m"
+											 src="images/nevermore_shadowraze1_hp1.png"
+											 imgtip="skillList0"/>
+
+										<div class="pop_box" id="skillList0">
+											<div class="pop_skill_t"><span
+													class="font16">毁灭阴影</span></div>
+											<p class="pop_skill_p">影魔对其正前方区域发出毁灭能量，对该区域中的敌人造成伤害。</p>
+
+											
+											<p class="pop_skill_data">
+												<span
+													class="font14 bold">技能:无目标</span><br/>
+																									<span
+														class="font14 bold">伤害类型:魔法</span>
+													<br/>
+																																																																												<span
+															class="font14 bold">距离：200</span>
+														<br/>
+																																																													</p>
+
+											<div class="xiaohao_wrap pop_xiaohao">
+												<div
+													class="icon_xh">90</div>
+												<div
+													class="icon_lq">10</div>
+											</div>
+											<p class="pop_skill_s">影魔标志性的灵魂收割手段。</p>
+										</div>
+										<ul class="point_ul" addNum="2,4,6,8">
+											<li id="point1_1"></li>
+											<li id="point1_2"></li>
+											<li id="point1_3"></li>
+											<li id="point1_4"></li>
+											<li id="point1_5"></li>
+											<li id="point1_6"></li>
+											<li id="point1_7"></li>
+											<li id="point1_8"></li>
+											<li id="point1_9"></li>
+											<li id="point1_10"></li>
+											<li id="point1_11"></li>
+											<li id="point1_12"></li>
+											<li id="point1_13"></li>
+											<li id="point1_14"></li>
+											<li id="point1_15"></li>
+											<li id="point1_16"></li>
+											<li id="point1_17"></li>
+											<li id="point1_18"></li>
+										</ul>
+									</div>
+																																																														<div class="point_wrap clearfix">
+										<img class="skill_m"
+											 src="images/nevermore_necromastery_hp1.png"
+											 imgtip="skillList3"/>
+
+										<div class="pop_box" id="skillList3">
+											<div class="pop_skill_t"><span
+													class="font16">支配死灵</span></div>
+											<p class="pop_skill_p">影魔窃取被他杀死的单位的灵魂，获得额外的攻击力。如果被杀死的单位是一个英雄，他将获得12个灵魂。影魔死亡时将会有一半的灵魂逃离他的束缚。可用神杖升级。</p>
+
+																							<p class="pop_skill_p color_green">
+													反补、杀死中立生物也能收集到灵魂。												</p>
+											
+											<p class="pop_skill_data">
+												<span
+													class="font14 bold">技能:被动</span><br/>
+																																																			<span
+															class="font14 bold">单个灵魂的攻击力加成：2</span>
+														<br/>
+																																																																													<span
+															class="font14 bold">灵魂上限：18/24/30/36</span>
+														<br/>
+																																																																																																						<span
+															class="font14 bold">神杖升级灵魂上限：22/30/38/46</span>
+														<br/>
+																																				</p>
+
+											<div class="xiaohao_wrap pop_xiaohao">
+												<div
+													class="icon_xh">0</div>
+												<div
+													class="icon_lq">0</div>
+											</div>
+											<p class="pop_skill_s">被收割的亡魂在影魔体内的魂渊盘旋，让影魔能不断的增加他的灵魂收藏。</p>
+										</div>
+										<ul class="point_ul" addNum="1,3,5,7">
+											<li id="point4_1"></li>
+											<li id="point4_2"></li>
+											<li id="point4_3"></li>
+											<li id="point4_4"></li>
+											<li id="point4_5"></li>
+											<li id="point4_6"></li>
+											<li id="point4_7"></li>
+											<li id="point4_8"></li>
+											<li id="point4_9"></li>
+											<li id="point4_10"></li>
+											<li id="point4_11"></li>
+											<li id="point4_12"></li>
+											<li id="point4_13"></li>
+											<li id="point4_14"></li>
+											<li id="point4_15"></li>
+											<li id="point4_16"></li>
+											<li id="point4_17"></li>
+											<li id="point4_18"></li>
+										</ul>
+									</div>
+																																<div class="point_wrap clearfix">
+										<img class="skill_m"
+											 src="images/nevermore_dark_lord_hp1.png"
+											 imgtip="skillList4"/>
+
+										<div class="pop_box" id="skillList4">
+											<div class="pop_skill_t"><span
+													class="font16">魔王降临</span></div>
+											<p class="pop_skill_p">影魔的出现使得周围的敌人护甲降低。</p>
+
+																							<p class="pop_skill_p color_green">
+													与其他降低护甲的技能和光环完全叠加。												</p>
+											
+											<p class="pop_skill_data">
+												<span
+													class="font14 bold">技能:被动, 光环</span><br/>
+																																																			<span
+															class="font14 bold">护甲削弱：-3/-4/-5/-6</span>
+														<br/>
+																																																				<span
+															class="font14 bold">作用范围：900</span>
+														<br/>
+																																				</p>
+
+											<div class="xiaohao_wrap pop_xiaohao">
+												<div
+													class="icon_xh">0</div>
+												<div
+													class="icon_lq">0</div>
+											</div>
+											<p class="pop_skill_s">即使只是在影魔周围游荡，灵魂也会被侵蚀。</p>
+										</div>
+										<ul class="point_ul" addNum="10,12,13,14">
+											<li id="point5_1"></li>
+											<li id="point5_2"></li>
+											<li id="point5_3"></li>
+											<li id="point5_4"></li>
+											<li id="point5_5"></li>
+											<li id="point5_6"></li>
+											<li id="point5_7"></li>
+											<li id="point5_8"></li>
+											<li id="point5_9"></li>
+											<li id="point5_10"></li>
+											<li id="point5_11"></li>
+											<li id="point5_12"></li>
+											<li id="point5_13"></li>
+											<li id="point5_14"></li>
+											<li id="point5_15"></li>
+											<li id="point5_16"></li>
+											<li id="point5_17"></li>
+											<li id="point5_18"></li>
+										</ul>
+									</div>
+																																<div class="point_wrap clearfix">
+										<img class="skill_m"
+											 src="images/nevermore_requiem_hp1.png"
+											 imgtip="skillList5"/>
+
+										<div class="pop_box" id="skillList5">
+											<div class="pop_skill_t"><span
+													class="font16">魂之挽歌</span></div>
+											<p class="pop_skill_p">影魔聚集捕获的灵魂，以多道魔能的形式释放。若距离影魔过近将受到数道魔能的伤害。受到魂之挽歌伤害的敌方单位同时也会受到移动速度和攻击速度均有所下降的效果。每2个通过支配死灵收集的灵魂会为魂之挽歌创造一道魔能。死亡时会自动释放魂之挽歌，不占用主动大招的冷却时间。可用神杖升级。</p>
+
+																							<p class="pop_skill_p color_green">
+													根据影魔收集的灵魂数量，每2个灵魂会产生1道伤害波，伤害波数量上限为18道（神杖升级后为23道）。</br>魂之挽歌的移动速度减缓和攻击力降低效果均无视技能免疫。												</p>
+											
+											<p class="pop_skill_data">
+												<span
+													class="font14 bold">技能:无目标</span><br/>
+																									<span
+														class="font14 bold">伤害类型:魔法</span>
+													<br/>
+																																																			<span
+															class="font14 bold">施法延迟：1.67</span>
+														<br/>
+																																																																													<span
+															class="font14 bold">移动速度减少：-25%</span>
+														<br/>
+																																																																													<span
+															class="font14 bold">攻击力降低：-50%</span>
+														<br/>
+																																																				<span
+															class="font14 bold">降攻和减速持续时间：5.0</span>
+														<br/>
+																																																																																																																																																																																																										<span
+															class="font14 bold">神杖升级回归时治疗量：100%</span>
+														<br/>
+																																																				<span
+															class="font14 bold">神杖升级回归伤害：40%</span>
+														<br/>
+																																				</p>
+
+											<div class="xiaohao_wrap pop_xiaohao">
+												<div
+													class="icon_xh">150/175/20</div>
+												<div
+													class="icon_lq">120/110/10</div>
+											</div>
+											<p class="pop_skill_s">那些死者的灵魂被捕获，用来毁灭他们生前的盟友。</p>
+										</div>
+										<ul class="point_ul" addNum="9,11,16">
+											<li id="point6_1"></li>
+											<li id="point6_2"></li>
+											<li id="point6_3"></li>
+											<li id="point6_4"></li>
+											<li id="point6_5"></li>
+											<li id="point6_6"></li>
+											<li id="point6_7"></li>
+											<li id="point6_8"></li>
+											<li id="point6_9"></li>
+											<li id="point6_10"></li>
+											<li id="point6_11"></li>
+											<li id="point6_12"></li>
+											<li id="point6_13"></li>
+											<li id="point6_14"></li>
+											<li id="point6_15"></li>
+											<li id="point6_16"></li>
+											<li id="point6_17"></li>
+											<li id="point6_18"></li>
+										</ul>
+									</div>
+																						<!--黄点-->
+							<div class="point_wrap clearfix">
+								<img class="skill_m"
+									 src="images/skill_add.jpg"/>
+								<ul id="huang_ul">
+									<li id="pointadd_1"></li>
+									<li id="pointadd_2"></li>
+									<li id="pointadd_3"></li>
+									<li id="pointadd_4"></li>
+									<li id="pointadd_5"></li>
+									<li id="pointadd_6"></li>
+									<li id="pointadd_7"></li>
+									<li id="pointadd_8"></li>
+									<li id="pointadd_9"></li>
+									<li id="pointadd_10"></li>
+									<li id="pointadd_11"></li>
+									<li id="pointadd_12"></li>
+									<li id="pointadd_13"></li>
+									<li id="pointadd_14"></li>
+									<li id="pointadd_15"></li>
+									<li id="pointadd_16"></li>
+									<li id="pointadd_17"></li>
+									<li id="pointadd_18"></li>
+								</ul>
+							</div>
+						</div>
+					
+					<!--equip-->
+					<a name="hero_03" id="hero_03"></a>
+
+					<div class="r_title">装备选择</div>
+					<div class="r_box">
+						<div class="r_title2">出装建议</div>
+						<div class="equip_wrap clearfix">
+							<div class="equip_one">
+
+								<div class="equip_t">出门装备</div>
+								<ul class="equip_ul clearfix">
+																													<li>
+											<img class="equip_s" src="images/flask_lg.png"
+												 imgtip="cmzbList0"/>
+
+											<div class="pop_box" id="cmzbList0">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/flask_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">治疗药膏</span>
+
+														<div class="equip_money">110</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											使用：持续恢复生命值，受到攻击会驱散效果。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															持续时间：<span class="color_yellow">8</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															生命回复量：<span class="color_yellow">400</span>
+														</p>
+																									
+																								<p class="pop_skill_s">即使最严重的伤口也能快速治愈的魔法药膏。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/tango_lg.png"
+												 imgtip="cmzbList1"/>
+
+											<div class="pop_box" id="cmzbList1">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/tango_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">树之祭祀</span>
+
+														<div class="equip_money">125</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											使用：食用树木/守卫 - 吃掉一棵树或一个守卫来恢复生命值。可以使用4次。对友方英雄使用可以分给他一次使用机会。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														对铁树枝干的树木或守卫使用时治疗持续时间加倍。													</p>
+												
+												
+																																							<p class="pop_skill_p">
+															吃树生命恢复量：<span class="color_yellow">115</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															使用守卫恢复生命量：<span class="color_yellow">230</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															食用守卫施法距离：<span class="color_yellow">450</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															回复持续时间：<span class="color_yellow">16.0</span>
+														</p>
+																									
+																								<p class="pop_skill_s">战场上的救命稻草。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/slippers_lg.png"
+												 imgtip="cmzbList2"/>
+
+											<div class="pop_box" id="cmzbList2">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/slippers_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">敏捷便鞋</span>
+
+														<div class="equip_money">150</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											 																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+敏捷：<span class="color_yellow">3</span>
+														</p>
+																									
+																								<p class="pop_skill_s">蜘蛛皮做成的轻便靴子，能让你感觉到刺痛。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/branches_lg.png"
+												 imgtip="cmzbList3"/>
+
+											<div class="pop_box" id="cmzbList3">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/branches_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">铁树枝干</span>
+
+														<div class="equip_money">50</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											 使用：对地面施放，种下一棵快乐的小树，持续20秒。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+所有属性：<span class="color_yellow">1</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															树木持续时间：<span class="color_yellow">20</span>
+														</p>
+																									
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">0.0</div>
+																											</div>
+																								<p class="pop_skill_s">一根看起来很普通的树枝，它如铁般坚硬的品质赋予持有者好运。</p>
+											</div>
+										</li>
+																										</ul>
+							</div>
+							<div class="equip_one">
+								<div class="equip_t">游戏初期</div>
+								<ul class="equip_ul clearfix">
+																													<li>
+											<img class="equip_s" src="images/magic_stick_lg.png"
+												 imgtip="cmzbList0"/>
+
+											<div class="pop_box" id="cmzbList0">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/magic_stick_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">魔棒</span>
+
+														<div class="equip_money">200</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：充能 - 立刻根据能量点数回复相应的生命和魔法。每当周围有敌人施放技能都会自动充能（最多10点能量）。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														1200码视野范围内敌人使用技能就会获得点数。													</p>
+												
+																									<p class="pop_skill_p color_green">
+														部分英雄技能和物品技能的施放将不会增加点数。													</p>
+												
+																																																																																									<p class="pop_skill_p">
+															每点能量回复生命/魔法：<span class="color_yellow">15</span>
+														</p>
+																									
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">13.0</div>
+																											</div>
+																								<p class="pop_skill_s">一个简易但实用的魔杖，能够补充使用者的能量--巫师学徒和高级术士都喜欢。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/boots_lg.png"
+												 imgtip="cmzbList1"/>
+
+											<div class="pop_box" id="cmzbList1">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/boots_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">速度之靴</span>
+
+														<div class="equip_money">400</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											移动速度提升效果不与其他鞋子叠加。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+移动速度：<span class="color_yellow">45</span>
+														</p>
+																									
+																								<p class="pop_skill_s">穿双鞋子，跑的更快。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/ring_of_aquila_lg.png"
+												 imgtip="cmzbList2"/>
+
+											<div class="pop_box" id="cmzbList2">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/ring_of_aquila_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">天鹰之戒</span>
+
+														<div class="equip_money">985</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											被动：天鹰光环 - 给予900范围内友军额外的魔法恢复速率和护甲。主动：切换光环的影响单位（普通/仅限英雄）。多个天鹰光环的效果不叠加。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														王者之戒，天鹰之戒和弗拉迪米尔的祭品拥有的护甲光环互不叠加。													</p>
+												
+												
+																																							<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">10</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+力量：<span class="color_yellow">3</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+敏捷：<span class="color_yellow">9</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+智力：<span class="color_yellow">3</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+护甲：<span class="color_yellow">0</span>
+														</p>
+																																																																													<p class="pop_skill_p">
+															光环恢复魔法：<span class="color_yellow">0.65</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															光环提升护甲：<span class="color_yellow">2</span>
+														</p>
+																									
+																								<p class="pop_skill_s">战将阿奎拉阵亡后他的戒指依然在战场上支援着军队。</p>
+											</div>
+										</li>
+																										</ul>
+							</div>
+							<div class="equip_one">
+								<div class="equip_t">核心装备</div>
+								<ul class="equip_ul clearfix">
+																													<li>
+											<img class="equip_s" src="images/magic_wand_lg.png"
+												 imgtip="cmzbList0"/>
+
+											<div class="pop_box" id="cmzbList0">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/magic_wand_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">魔杖</span>
+
+														<div class="equip_money">465</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：充能 - 立刻根据能量点数回复相应的生命和魔法。每当周围有敌人施放技能都会自动充能（最多17点能量）。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														1200码视野范围内敌人使用技能就会获得点数。													</p>
+												
+																									<p class="pop_skill_p color_green">
+														部分英雄技能和物品技能的施放将不会增加点数。													</p>
+												
+																																																																																									<p class="pop_skill_p">
+															+所有属性：<span class="color_yellow">4</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															每点能量回复生命/魔法：<span class="color_yellow">15</span>
+														</p>
+																									
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">13.0</div>
+																											</div>
+																								<p class="pop_skill_s">一个简易但实用的魔杖，能够补充使用者的能量--巫师学徒和高级术士都喜欢。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/power_treads_lg.png"
+												 imgtip="cmzbList1"/>
+
+											<div class="pop_box" id="cmzbList1">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/power_treads_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">动力鞋</span>
+
+														<div class="equip_money">1350</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：属性切换 - 将附加属性在力量，敏捷以及智力三者间切换。动力鞋的合成配件力量腰带可以替换为精灵布带或法师长袍。移动速度加成效果不与其他鞋类物品叠加，多个动力鞋只有一个攻速加成效果。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+移动速度：<span class="color_yellow">45</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+所选属性：<span class="color_yellow">9</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+攻击：<span class="color_yellow">25</span>
+														</p>
+																																																		
+																								<p class="pop_skill_s">一双厚实的皮靴，能根据穿着者的需求切换属性。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/blink_lg.png"
+												 imgtip="cmzbList2"/>
+
+											<div class="pop_box" id="cmzbList2">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/blink_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">闪烁匕首</span>
+
+														<div class="equip_money">2250</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：闪烁 - 传送到最远1200距离的位置。如果受到攻击，闪烁匕首将在3.0秒内无法使用。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														快速点击两次会将自己往己方泉水方向传送。													</p>
+												
+																									<p class="pop_skill_p color_green">
+														如果闪烁传送的距离超过最长施法距离，那么只能传送到最长距离的4/5。													</p>
+												
+																																																																																							
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">12.0</div>
+																											</div>
+																								<p class="pop_skill_s">传说中这块大陆上来去如风的刺客使用的匕首。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/black_king_bar_lg.png"
+												 imgtip="cmzbList3"/>
+
+											<div class="pop_box" id="cmzbList3">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/black_king_bar_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">黑皇杖</span>
+
+														<div class="equip_money">3975</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：天神下凡 - 获得技能免疫状态和100%的魔法抗性。持续时间和冷却时间每使用一次都会降低。部分终极技能的施放将无视天神下凡的效果。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														再次购买黑皇杖也不会重置天神下凡的持续时间。													</p>
+												
+																									<p class="pop_skill_p color_green">
+														使用黑皇杖将使部分有益状态消失。													</p>
+												
+																																							<p class="pop_skill_p">
+															+力量：<span class="color_yellow">10</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">24</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															天神下凡持续时间：<span class="color_yellow">10.0 9.0 8.0 7.0 6.0 5.0</span>
+														</p>
+																																																																											
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">80 75 70 65 60 55</div>
+																											</div>
+																								<p class="pop_skill_s">渗透了巨人之力的强大法杖。</p>
+											</div>
+										</li>
+																										</ul>
+							</div>
+							<div class="equip_one">
+								<div class="equip_t">后期神装</div>
+								<ul class="equip_ul clearfix">
+																													<li>
+											<img class="equip_s" src="images/invis_sword_lg.png"
+												 imgtip="cmzbList0"/>
+
+											<div class="pop_box" id="cmzbList0">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/invis_sword_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">影刃</span>
+
+														<div class="equip_money">2700</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：暗影步 - 进入隐身直到持续时间结束、攻击或施法。当激活暗影步时，移动速度提升20%并能穿越单位。破隐一击造成175点额外伤害。持续14.0秒。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														拥有0.3秒的进入隐身时间。													</p>
+												
+																									<p class="pop_skill_p color_green">
+														如果隐身结束时没有攻击，额外伤害效果将会消失。													</p>
+												
+																																							<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">22</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+攻击：<span class="color_yellow">30</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															暗影步持续时间：<span class="color_yellow">14.0</span>
+														</p>
+																																																																																																						<p class="pop_skill_p">
+															暗影步伤害：<span class="color_yellow">175</span>
+														</p>
+																									
+																									<div class="xiaohao_wrap pop_xiaohao">
+																													<div class="icon_xh">75</div>
+														
+																													<div class="icon_lq">28.0</div>
+																											</div>
+																								<p class="pop_skill_s">一位国王死后留下的宝剑，拿着它你可以隐身移动并从阴影中发动突袭。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/assault_lg.png"
+												 imgtip="cmzbList1"/>
+
+											<div class="pop_box" id="cmzbList1">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/assault_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">强袭胸甲</span>
+
+														<div class="equip_money">5250</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											被动：强袭光环 - 提升附近友军单位和建筑的攻击速度和护甲，削弱附近敌军的护甲。多个强袭光环的效果不会叠加。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+攻击：<span class="color_yellow">35</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+护甲：<span class="color_yellow">10</span>
+														</p>
+																																																																													<p class="pop_skill_p">
+															光环提升攻击速度：<span class="color_yellow">20</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															光环提升友军护甲：<span class="color_yellow">5</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															光环护甲敌军削弱：<span class="color_yellow">-5</span>
+														</p>
+																									
+																								<p class="pop_skill_s">在幽冥地带的深渊锻造，这件地狱盔甲提高整支军队的护甲和攻击速度。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/greater_crit_lg.png"
+												 imgtip="cmzbList2"/>
+
+											<div class="pop_box" id="cmzbList2">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/greater_crit_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">代达罗斯之殇</span>
+
+														<div class="equip_money">5520</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											被动：致命一击 - 普通攻击有一定概率造成致命伤害。在攻击建筑物时不会触发致命一击。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">81</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															致命一击概率：<span class="color_yellow">30%</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															致命一击伤害：<span class="color_yellow">220%</span>
+														</p>
+																									
+																								<p class="pop_skill_s">这件武器有着惊人的力量，即使是最强的战士也难以掌控它。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/desolator_lg.png"
+												 imgtip="cmzbList3"/>
+
+											<div class="pop_box" id="cmzbList3">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/desolator_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">黯灭</span>
+
+														<div class="equip_money">3500</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											被动：腐蚀 - 物理攻击将降低目标的护甲，持续15秒。黯灭是攻击特效，不与其它攻击特效叠加。																									</p>
+
+																									<p class="pop_skill_p color_green">
+														护甲降低效果对建筑有效。													</p>
+												
+												
+																																							<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">50</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															护甲削弱：<span class="color_yellow">-7</span>
+														</p>
+																																																		
+																								<p class="pop_skill_s">这件邪恶并且嗜血的武器，通常用于拷打政治犯。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/butterfly_lg.png"
+												 imgtip="cmzbList4"/>
+
+											<div class="pop_box" id="cmzbList4">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/butterfly_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">蝴蝶</span>
+
+														<div class="equip_money">5775</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											主动：振翅 - 牺牲闪避效果，获得35%移动速度提升，持续4秒。与其他闪避效果为非线性叠加。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+敏捷：<span class="color_yellow">30</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">30</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+闪避：<span class="color_yellow">35%</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+攻击：<span class="color_yellow">30</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															振翅移速加成：<span class="color_yellow">35%</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															振翅持续时间：<span class="color_yellow">4</span>
+														</p>
+																									
+																									<div class="xiaohao_wrap pop_xiaohao">
+														
+																													<div class="icon_lq">25.0</div>
+																											</div>
+																								<p class="pop_skill_s">只有最强大最老练的战士才能携带蝴蝶，但它也提供无可比拟的战斗灵活力作为回报。</p>
+											</div>
+										</li>
+																			<li>
+											<img class="equip_s" src="images/monkey_king_bar_lg.png"
+												 imgtip="cmzbList5"/>
+
+											<div class="pop_box" id="cmzbList5">
+												<div class="pop_equip_wrap clearfix">
+													<img src="images/monkey_king_bar_lg.png"/>
+
+													<div class="equip_item_r">
+														<span class="font16 wpcolor${cmzbList.goods.wppz}">金箍棒</span>
+
+														<div class="equip_money">5400</div>
+													</div>
+												</div>
+												<p class="pop_skill_p">
+																											被动：猛击 - 每次攻击均有一定概率猛击敌人，造成额外伤害并打断持续施法。被动：克敌机先 - 攻击不会落空。攻击敌方建筑时不会生效。																									</p>
+
+												
+												
+																																							<p class="pop_skill_p">
+															+伤害：<span class="color_yellow">66</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															+攻击：<span class="color_yellow">15</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															猛击几率：<span class="color_yellow">35%</span>
+														</p>
+																																																				<p class="pop_skill_p">
+															猛击伤害：<span class="color_yellow">160</span>
+														</p>
+																																																		
+																								<p class="pop_skill_s">一位大师级战士使用的强力棍棒。</p>
+											</div>
+										</li>
+																										</ul>
+							</div>
+						</div>
+					</div>
+					<!--match-->
+					<div class="r_title">英雄适配</div>
+					<div class="r_box">
+						<div class="r_title2">适合一起组队的英雄</div>
+													<ul class="match_ul">
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/beastmaster"><img
+													src="images/beastmaster_full.png"
+													alt="兽王"/></a>
+										</div>
+										<a href="/hero/beastmaster">兽王</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/batrider"><img
+													src="images/batrider_full.png"
+													alt="蝙蝠骑士"/></a>
+										</div>
+										<a href="/hero/batrider">蝙蝠骑士</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/faceless_void"><img
+													src="images/faceless_void_full.png"
+													alt="虚空假面"/></a>
+										</div>
+										<a href="/hero/faceless_void">虚空假面</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/magnus"><img
+													src="images/magnataur_full.png"
+													alt="马格纳斯"/></a>
+										</div>
+										<a href="/hero/magnus">马格纳斯</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/silencer"><img
+													src="images/silencer_full.png"
+													alt="沉默术士"/></a>
+										</div>
+										<a href="/hero/silencer">沉默术士</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/tidehunter"><img
+													src="images/tidehunter_full.png"
+													alt="潮汐猎人"/></a>
+										</div>
+										<a href="/hero/tidehunter">潮汐猎人</a>
+									</li>
+															</ul>
+												<div class="r_title2" style="margin-top:25px;">相同使用类型的英雄</div>
+													<ul class="match_ul">
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/alchemist"><img
+													src="images/alchemist_full.png"
+													alt="炼金术士"/></a>
+										</div>
+										<a href="/hero/alchemist">炼金术士</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/clinkz"><img
+													src="images/clinkz_full.png"
+													alt="克林克兹"/></a>
+										</div>
+										<a href="/hero/clinkz">克林克兹</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/lifestealer"><img
+													src="images/life_stealer_full.png"
+													alt="噬魂鬼"/></a>
+										</div>
+										<a href="/hero/lifestealer">噬魂鬼</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/lone_druid"><img
+													src="images/lone_druid_full.png"
+													alt="德鲁伊"/></a>
+										</div>
+										<a href="/hero/lone_druid">德鲁伊</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/outworld_devourer"><img
+													src="images/obsidian_destroyer_full.png"
+													alt="殁境神蚀者"/></a>
+										</div>
+										<a href="/hero/outworld_devourer">殁境神蚀者</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/slark"><img
+													src="images/slark_full.png"
+													alt="斯拉克"/></a>
+										</div>
+										<a href="/hero/slark">斯拉克</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/timbersaw"><img
+													src="images/shredder_full.png"
+													alt="伐木机"/></a>
+										</div>
+										<a href="/hero/timbersaw">伐木机</a>
+									</li>
+																	<li>
+										<div class="match_bg">
+											<a href="/hero/ursa"><img
+													src="images/ursa_full.png"
+													alt="熊战士"/></a>
+										</div>
+										<a href="/hero/ursa">熊战士</a>
+									</li>
+															</ul>
+											</div>
+					<p class="weizhun">※所有资料均以线上游戏内数据为准※</p>
+				</div>
+			</div>
+		</div>
+		</c:if>
+	</div>
+</div>
+<div id="footerIframe" class="bottom">
+	<!-- <iframe src="http://www.dota2.com.cn/iframe/footer130118.htm" allowtransparency="true" scrolling="no"
+			frameborder="0" width="100%" height="90"></iframe> -->
+</div>
+<script src="js/bottom-cover.js"></script>
+<script type="text/javascript" src="js/lunbo.js"></script>
+<script type="text/javascript" src="js/herobar.js"></script>
+<script type="text/javascript" src="js/gototop.js"
+		gototop="{bottom:10,width:40,height:40}"></script>
+<script type="text/javascript">
+	function addFav() {
+		var favUrl = top.location.href;
+		var favName = top.document.title;
+		try {
+			window.external.AddFavorite(favUrl, favName);
+		}
+		catch (e) {
+			try {
+				window.sidebar.addPanel(favName, favUrl, "");
+			}
+			catch (e) {
+				alert("使用快捷键 Ctrl+D 或 Cmd+D 来收藏此页！");
+			}
+		}
+	}
+	$(function () {
+		$('.top_hero_card img').click(function () {
+			location.reload();
+		});
+		$('.slide_span').toggle(function () {
+			$(this).html('[收起-]');
+			$('.story_box').removeClass('h120');
+		}, function () {
+			$(this).html('[展开+]');
+			$('.story_box').addClass('h120');
+		});
+		//pop_type
+		var popTypeCont = {
+			'核心': '如果他们能取得一定经济优势，就会在游戏后期变得愈加强大。',
+			'控制': '他们有一个或多个技能能提供稳定控制。',
+			'对线辅助': '能够在早期的对线中有效地保护队伍中的核心，为他们创造打钱空间。',
+			'先手': '擅长发起团战。',
+			'打野': '游戏早起能够通过野区的中立生物进行高效率的打钱。',
+			'辅助': '不太注重积累金钱和装备，更倾向于使用他们的技能为团队取得优势。',
+			'耐久': '能够在团战中持续作战更长时间。 ',
+			'爆发': '能用高伤害低冷却法术迅速杀死敌方英雄。',
+			'高爆发': '能用高伤害低冷却法术迅速杀死敌方英雄。',
+			'推进': '在游戏各个阶段都可以快速对防御塔和兵营发起攻击并摧毁它们。',
+			'逃生': '能够迅速脱离死亡的威胁。'
+		};
+
+		function follow(tip_area, tip_cont, l, t) {//鼠标经过区域，弹出层，左距，上距
+			function getEvent(event) {
+				return window.event || event;
+			}
+
+			function showFollow(event, $el) {
+				event = getEvent(event);
+				var scroll_top = document.documentElement.scrollTop || document.body.scrollTop;
+				$el.show();
+				$el.css('left', event.clientX + l + 'px');
+				$el.css('top', event.clientY + scroll_top + t + 'px');
+			}
+
+			function hideFollow($el) {
+				$el.hide();
+			}
+
+			$(tip_area).mousemove(function (event) {
+				showFollow(event, $(tip_cont));
+			});
+			$(tip_area).mouseout(function (event) {
+				hideFollow($(tip_cont));
+			});
+		}
+
+		$('._btn_type').each(function (i) {
+			$(this).mouseover(function () {
+				$('#pop_type_name').html($(this).html());
+				$('#pop_type_star').attr('class', 'star' + $(this).attr('star'));
+				$('#pop_type_cont').html(popTypeCont[$(this).attr('type')]);
+			});
+			follow($(this), $('#pop_type'), 5, 5);
+		});
+		var lastEmLen = $('#lastEm em').size();
+		$('#lastEm em').eq(lastEmLen - 1).hide();
+		//pop_property
+		$('.pro6_box li').each(function () {
+			follow($(this), $(this).find('.pop_box'), 5, 5);
+		});
+		//pop_skill
+		$('.skill_m').each(function () {
+			follow($(this), $(this).siblings('.pop_box'), 5, 5);
+		});
+		//pop_equip
+		$('.equip_ul li').each(function () {
+			follow($(this), $(this).find('.pop_box'), -355, 5);
+		});
+		//v
+		$('.v_tab li').each(function () {
+			$(this).click(function () {
+				$('.v_tab li').removeClass('on');
+				$(this).addClass('on');
+				teachVideoShow($(this).attr('videourl'));
+			});
+		});
+		$('.gl_one').each(function () {
+			$(this).hover(function () {
+				$(this).addClass('gl_on');
+			}, function () {
+				$(this).removeClass('gl_on');
+			});
+		});
+		//skill
+		function skillVideoShow(id, videourl) {
+			addVideo(id, 454, 256,
+				{
+					source: videourl,
+					autoPlay: true,
+					repeat: true
+				}
+			);
+		};
+		$('.btn_skill_v').each(function () {
+			$(this).click(function () {
+				if ($(this).attr('videourl')) {
+					$(this).hide();
+					$(this).siblings('.skill_v_box').show();
+					skillVideoShow($(this).siblings('.skill_v_box').find('.skill_v_bg').attr('id'), $(this).attr('videourl'));
+				} else {
+					alert("敬请期待！");
+					return false;
+				}
+			});
+		});
+		$('.hide_v').each(function () {
+			$(this).click(function () {
+				$(this).parent('.skill_v_box').hide();
+				$(this).parent('.skill_v_box').siblings('.btn_skill_v').show();
+			});
+		});
+		//point
+		var allNum = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
+		var haveNum = [];
+		$('.point_ul').each(function (i) {
+			var $thisUl = $(this);
+			var pointNumArr = $(this).attr('addNum').split(',');
+			haveNum = haveNum.concat(pointNumArr);
+			$(pointNumArr).each(function (j) {
+				$thisUl.find('li').eq(pointNumArr[j] - 1).addClass('on');
+			});
+		});
+		$(allNum).each(function (i) {
+			var $thisNum = allNum[i];
+			var numFlag = false;
+			$(haveNum).each(function (j) {
+				if ($thisNum == haveNum[j]) {
+					numFlag = true;
+				}
+			});
+			if (numFlag == false) {
+				$('#huang_ul li').eq($thisNum - 1).addClass('on');
+			}
+		});
+	});
+	//swf
+	function cc() {
+		var obj25 = new Object();
+		obj25.level = ($('#flash_data').attr('dj').split('/'))[2];
+		obj25.id = $('.id_div').attr('id');
+		obj25.smz = ($('#flash_data').attr('smz').split('/'))[2];
+		obj25.mfz = ($('#flash_data').attr('mfz').split('/'))[2];
+		obj25.gjl = ((($('#flash_data').attr('gjl').split('/'))[2]).split('-'))[0];
+		obj25.gjlM = ((($('#flash_data').attr('gjl').split('/'))[2]).split('-'))[1];
+		obj25.gjsd = $('#flash_data').attr('gjsd').split('/')[2];
+		obj25.gjjl = $('#flash_data').attr('gjjl').split('/')[2];
+		obj25.hj = ($('#flash_data').attr('hj').split('/'))[2];
+
+		return obj25;
+	}
+	function cc1() {
+		var obj1 = new Object();
+		obj1.level = ($('#flash_data').attr('dj').split('/'))[0];
+		obj1.id = $('.id_div').attr('id');
+		obj1.smz = ($('#flash_data').attr('smz').split('/'))[0];
+		obj1.mfz = ($('#flash_data').attr('mfz').split('/'))[0];
+		obj1.gjl = ((($('#flash_data').attr('gjl').split('/'))[0]).split('-'))[0];
+		obj1.gjlM = ((($('#flash_data').attr('gjl').split('/'))[0]).split('-'))[1];
+		obj1.gjsd = $('#flash_data').attr('gjsd').split('/')[0];
+		obj1.gjjl = $('#flash_data').attr('gjjl').split('/')[0];
+		obj1.hj = ($('#flash_data').attr('hj').split('/'))[0];
+
+		return obj1;
+	}
+	function cc15() {
+		var obj15 = new Object();
+		obj15.level = ($('#flash_data').attr('dj').split('/'))[1];
+		obj15.id = $('.id_div').attr('id');
+		obj15.smz = ($('#flash_data').attr('smz').split('/'))[1];
+		obj15.mfz = ($('#flash_data').attr('mfz').split('/'))[1];
+		obj15.gjl = ((($('#flash_data').attr('gjl').split('/'))[1]).split('-'))[0];
+		obj15.gjlM = ((($('#flash_data').attr('gjl').split('/'))[1]).split('-'))[1];
+		obj15.gjsd = $('#flash_data').attr('gjsd').split('/')[1];
+		obj15.gjjl = $('#flash_data').attr('gjjl').split('/')[1];
+		obj15.hj = ($('#flash_data').attr('hj').split('/'))[1];
+
+		return obj15;
+	}
+	function cc25() {
+		var obj25 = new Object();
+		obj25.level = ($('#flash_data').attr('dj').split('/'))[2];
+		obj25.id = $('.id_div').attr('id');
+		obj25.smz = ($('#flash_data').attr('smz').split('/'))[2];
+		obj25.mfz = ($('#flash_data').attr('mfz').split('/'))[2];
+		obj25.gjl = ((($('#flash_data').attr('gjl').split('/'))[2]).split('-'))[0];
+		obj25.gjlM = ((($('#flash_data').attr('gjl').split('/'))[2]).split('-'))[1];
+		obj25.gjsd = $('#flash_data').attr('gjsd').split('/')[2];
+		obj25.gjjl = $('#flash_data').attr('gjjl').split('/')[2];
+		obj25.hj = ($('#flash_data').attr('hj').split('/'))[2];
+
+		return obj25;
+	}
+	addSWF('/static/flash/radar.swf', 'item_flash', 298, 200, {xml: '/static/flash/xml/options.xml'});
+	$('#level_select').change(function () {
+		if ($(this).val() == 15) {
+			callSWF("item_flash", "getData", cc15());
+		} else if ($(this).val() == 25) {
+			callSWF("item_flash", "getData", cc25());
+		} else {
+			callSWF("item_flash", "getData", cc1());
+		}
+	});
+</script>
+<div class="wm-public" analytics="{single:['dota2201401dota2data3238']}"></div>
+	<style type="text/css">
+	.foot_dl dd,
+	.bottom .rel1100 .certificate{
+		font-family: "Microsoft YaHei"; 
+	}
+	</style>
+</body>
+</html>
+

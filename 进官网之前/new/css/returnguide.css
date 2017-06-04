@@ -1,0 +1,508 @@
+﻿html,
+body {
+    font: 18px/1.5 "Microsoft YaHei", "微软雅黑", Arial, "Helvetica Neue", Helvetica, "sans-serif";
+    min-width: 1200px;
+    height: 100%;
+    color: rgb(155, 137, 130);
+    background: #000;
+}
+
+a,
+button,
+input {
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+
+.wrapper {
+    width: 100%;
+    background: #000;
+}
+
+.wrapper a:link,
+.wrapper a:visited,
+.wrapper a:hover,
+.wrapper a:active {
+    outline: none;
+    border: none;
+}
+
+.wrapper .section {
+    width: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.wrapper .block {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.wrapper .section .block .banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    zoom: 1;
+    text-decoration: none;
+}
+
+.wrapper .section-banner {
+    height: 1386px;
+    background-image: url("../images/bg-banner.jpg");
+}
+
+.wrapper .section-monkey {
+    height: 751px;
+    background-image: url("../images/bg-monkey.jpg");
+}
+
+.wrapper .section-new {
+    height: 768px;
+    background-image: url("../images/bg-new.jpg");
+}
+
+.wrapper .section-grade {
+    height: 733px;
+    background-image: url("../images/bg-grade.jpg");
+}
+
+.wrapper .section-game {
+    height: 904px;
+    background-image: url("../images/bg-game.jpg");
+}
+
+.wrapper .section-model {
+    height: 824px;
+    background-image: url("../images/bg-model.jpg");
+}
+
+.wrapper .section-braver {
+    height: 695px;
+    background-image: url("../images/bg-braver.jpg");
+}
+
+.wrapper .section-hero {
+    height: 758px;
+    background-image: url("../images/bg-hero.jpg");
+}
+
+.wrapper .section-precious {
+    height: 1103px;
+    background-image: url("../images/bg-precious.jpg");
+}
+
+.wrapper .section-rpg {
+    height: 777px;
+    background-image: url("../images/bg-rpg.jpg");
+}
+
+.wrapper .section-system {
+    height: 930px;
+    background-image: url("../images/bg-system.jpg");
+}
+
+.wrapper .section-download {
+    height: 824px;
+    background-image: url("../images/bg-download.jpg");
+}
+
+.wrapper .desc>h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.wrapper .desc>p {
+    line-height: 30px;
+}
+
+.wrapper .desc>p b {
+    color: #ed6333;
+}
+
+.wrapper .section:not(.section-banner) .button {
+    display: inline-block;
+    margin-top: 30px;
+    width: 273px;
+    height: 70px;
+    background-image: url("../images/btns.png");
+    background-repeat: no-repeat;
+}
+
+.wrapper .btn-monkey {
+    background-position: -12px -345px;
+}
+
+.wrapper .btn-monkey:hover {
+    background-position: -308px -345px;
+}
+
+.wrapper .btn-new {
+    background-position: -12px -430px;
+}
+
+.wrapper .btn-new:hover {
+    background-position: -308px -430px;
+}
+
+.wrapper .btn-grade {
+    background-position: -12px -517px;
+}
+
+.wrapper .btn-grade:hover {
+    background-position: -308px -517px;
+}
+
+.wrapper .btn-game {
+    background-position: -12px -603px;
+}
+
+.wrapper .btn-game:hover {
+    background-position: -308px -603px;
+}
+
+.wrapper .btn-model {
+    background-position: -12px -688px;
+}
+
+.wrapper .btn-model:hover {
+    background-position: -308px -688px;
+}
+
+.wrapper .btn-braver {
+    background-position: -12px -88px;
+}
+
+.wrapper .btn-braver:hover {
+    background-position: -308px -88px;
+}
+
+.wrapper .btn-hero {
+    background-position: -12px -173px;
+}
+
+.wrapper .btn-hero:hover {
+    background-position: -308px -173px;
+}
+
+.wrapper .btn-precious {
+    background-position: -12px -774px;
+}
+
+.wrapper .btn-precious:hover {
+    background-position: -308px -774px;
+}
+
+.wrapper .btn-rpg {
+    background-position: -12px -861px;
+}
+
+.wrapper .btn-rpg:hover {
+    background-position: -308px -865px;
+}
+
+.wrapper .btn-system {
+    background-position: -12px -949px;
+}
+
+.wrapper .btn-system:hover {
+    background-position: -308px -949px;
+}
+
+.wrapper .btn-download {
+    background-position: -12px -259px;
+}
+
+.wrapper .btn-download:hover {
+    background-position: -308px -259px;
+}
+
+.wrapper .section-banner .welcome {
+    margin-top: 665px;
+    font-size: 24px;
+    color: rgb(155, 137, 130);
+}
+
+.wrapper .section-banner .cards {
+    margin-top: 35px;
+    font-size: 0;
+}
+
+.wrapper .section-banner .card {
+    display: inline-block;
+    position: relative;
+    margin-left: 8px;
+    width: 233px;
+    height: 325px;
+    background-image: url("../images/bg-cards.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.wrapper .section-banner .card:first-child {
+    margin-left: 0;
+}
+
+.wrapper .section-banner .card:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    transition: background-color 0.5s ease;
+}
+
+.wrapper .section-banner .card.active:before,
+.wrapper .section-banner .card:hover:before {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.wrapper .section-banner .card .content {
+    position: absolute;
+    padding: 20px 0;
+    width: 100%;
+    top: 233px;
+    bottom: 0;
+    font-size: 14px;
+    color: rgb(153, 153, 153);
+    line-height: 1.714;
+    text-align: center;
+    box-sizing: border-box;
+    transition: top 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wrapper .section-banner .card.active .content,
+.wrapper .section-banner .card:hover .content {
+    display: block;
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.wrapper .section-banner .card .content .button {
+    position: absolute;
+    display: block;
+    left: 50%;
+    margin-left: -82px;
+    width: 164px;
+    height: 59px;
+    bottom: 20px;
+    text-decoration: none;
+    background-image: url(../images/btns.png);
+    background-repeat: no-repeat;
+    background-position: -11px -13px;
+    line-height: 59px;
+    font-size: 20px;
+    color: #b4b4b4;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    transition: opacity 0.3s ease 0.2s;
+}
+
+.wrapper .section-banner .card .content .button:hover {
+    background-position: -308px -13px;
+}
+
+.wrapper .section-banner .card.active .button,
+.wrapper .section-banner .card:hover .button {
+    opacity: 1;
+}
+
+.wrapper .card-download {
+    background-position: -26px -12px;
+}
+
+.wrapper .card-download:hover {
+    background-position: -26px -365px;
+}
+
+.wrapper .card-passport {
+    background-position: -271px -12px;
+}
+
+.wrapper .card-passport:hover {
+    background-position: -271px -365px;
+}
+
+.wrapper .card-event {
+    background-position: -511px -12px;
+}
+
+.wrapper .card-event:hover {
+    background-position: -511px -365px;
+}
+
+.wrapper .card-update {
+    background-position: -753px -12px;
+}
+
+.wrapper .card-update:hover {
+    background-position: -753px -365px;
+}
+
+.wrapper .card-video {
+    background-position: -995px -12px;
+}
+
+.wrapper .card-video:hover {
+    background-position: -995px -365px;
+}
+
+.wrapper .section-monkey .desc {
+    margin-top: 450px;
+}
+
+.wrapper .section-monkey .desc>h1 {
+    color: rgb(254, 211, 118);
+    text-shadow: 0px 5px 5px rgba(60, 45, 49, 0.75);
+}
+
+.wrapper .section-monkey .desc>p {
+    color: rgb(173, 131, 77);
+}
+
+.wrapper .section-new .desc {
+    margin-top: 485px;
+}
+
+.wrapper .section-new .desc>h1 {
+    color: rgb(157, 255, 248);
+    text-shadow: 0 0 24px rgba(24, 74, 91, 0.75);
+}
+
+.wrapper .section-new .desc>p {
+    color: rgb(41, 139, 160);
+}
+
+.wrapper .section-grade .desc {
+    margin-top: 470px;
+}
+
+.wrapper .section-grade .desc>h1 {
+    color: rgb(235, 255, 254);
+    text-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper .section-grade .desc>p {
+    color: rgb(57, 171, 176);
+}
+
+.wrapper .section-game .desc {
+    margin-top: 650px;
+}
+
+.wrapper .section-game .desc>h1 {
+    color: rgb(255, 219, 143);
+    text-shadow: 0 0 24px rgba(188, 133, 73, 0.75);
+}
+
+.wrapper .section-game .desc>p {
+    color: rgb(155, 107, 66);
+}
+
+.wrapper .section-model .desc {
+    margin-top: 560px;
+}
+
+.wrapper .section-model .desc>h1 {
+    color: rgb(237, 255, 154);
+    text-shadow: 0 0 24px rgba(110, 175, 84, 0.75);
+}
+
+.wrapper .section-model .desc>p {
+    color: rgb(80, 144, 100);
+}
+
+.wrapper .section-banner .desc {
+    margin-top: 80px;
+}
+
+.wrapper .section-banner .desc>h1 {
+    color: rgb(243, 222, 168);
+    text-shadow: 0px 3px 3px rgba(78, 9, 9, 0.75);
+}
+
+.wrapper .section-banner .desc>p {
+    color: rgb(141, 128, 96);
+    line-height: 1.667;
+    text-shadow: 0px 3px 3px rgba(78, 9, 9, 0.75);
+}
+
+.wrapper .section-braver .desc {
+    margin-top: 390px;
+}
+
+.wrapper .section-braver .desc>h1 {
+    color: rgb(232, 224, 126);
+}
+
+.wrapper .section-braver .desc>p {
+    color: rgb(241, 224, 101);
+}
+
+.wrapper .section-hero .desc {
+    margin-top: 470px;
+}
+
+.wrapper .section-hero .desc>h1 {
+    color: rgb(175, 237, 188);
+}
+
+.wrapper .section-hero .desc>p {
+    color: rgb(110, 150, 119);
+}
+
+.wrapper .section-precious .desc {
+    margin-top: 655px;
+}
+
+.wrapper .section-precious .desc>h1 {
+    color: rgb(243, 199, 94);
+}
+
+.wrapper .section-precious .desc>p {
+    color: rgb(137, 104, 41);
+}
+
+.wrapper .section-rpg .desc {
+    margin-top: 445px;
+}
+
+.wrapper .section-rpg .desc>h1 {
+    color: rgb(219, 199, 174);
+}
+
+.wrapper .section-rpg .desc>p {
+    color: rgb(150, 129, 103);
+}
+
+.wrapper .section-system .desc {
+    margin-top: 697px;
+}
+
+.wrapper .section-system .desc>h1 {
+    color: rgb(142, 217, 225);
+}
+
+.wrapper .section-system .desc>p {
+    color: rgb(104, 155, 161);
+}
+
+.wrapper .section-download .desc {
+    margin-top: 520px;
+}
+
+.wrapper .section-download .desc>h1 {
+    color: rgba(243, 222, 168, 0.878);
+}
+
+.wrapper .section-download .desc>p {
+    color: rgb(141, 128, 96);
+}

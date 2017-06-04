@@ -1,0 +1,170 @@
+
+
+#mask_logon{
+    width: 100%;
+    height: 1000px !important;
+    background-color: rgba(0,0,0,0.7);
+    position:fixed;
+    z-index: 99;
+    top:0;
+    display: none;
+}
+#nav_right #logon {
+    display:none;
+    width: 450px;
+    height: 566px;
+    background: url("../imglogon/bg-login.jpg") no-repeat;
+    position: fixed;
+    top: 50%;
+    margin-top: -245px;
+    left: 50%;
+    margin-left: -283px;
+    z-index: 100;
+}
+
+#nav_right #logon .center {
+    width: 348px;
+    margin: 0 auto;
+    padding-top: 200px;
+}
+
+#nav_right #logon #txt_box {
+    width: 348px;
+    height: 33px;
+    border: 1px solid #3B3B3B;
+    margin-bottom: 10px;
+}
+
+#logon #txt_box .btn1 {
+    float: left;
+    width: 30px;
+    height: 33px;
+    background: url("../imglogon/icons-login.png") no-repeat -5px -36px;
+}
+
+#logon #txt_box .txt1 {
+    float: left;
+    width: 313px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #0C0B09;
+    padding-left: 3px;
+    color: #A9A9A9;
+    /*font-size: 14px;*/
+
+}
+
+#nav_right #logon #pwd_box {
+    width: 348px;
+    height: 33px;
+    border: 1px solid #3B3B3B;
+    margin-bottom: 10px;
+}
+
+#logon #pwd_box .btn2 {
+    float: left;
+    width: 30px;
+    height: 33px;
+    background: url("../imglogon/icons-login.png") no-repeat -5px -74px;
+}
+
+#logon #pwd_box .txt2 {
+    float: left;
+    width: 313px;
+    height: 33px;
+    background-color: #0C0B09;
+    padding-left: 3px;
+    color: #A9A9A9;
+    /*font-size: 16px;*/
+
+}
+
+#nav_right #logon .center .check {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("../imglogon/icons-login.png") no-repeat -10px -161px;
+    color: red;
+    /*margin-top:33px;*/
+    cursor: pointer;
+    position: relative;
+}
+
+#nav_right #logon .center em {
+    height: 58px;
+    line-height: 58px;
+}
+
+#nav_right #logon .center .fl {
+    width: 200px;
+    color: #808080;
+    float:left;
+}
+
+#nav_right #logon .center .fl #sp {
+    width: 12px;
+    height: 12px;
+    background: url("../imglogon/icons-login.png") no-repeat -10px -195px;
+    display:none;
+}
+
+#nav_right #logon .center .fr {
+    /*padding-top: 20px;*/
+    width:100px;
+    float:right;
+    margin-top:20px;
+    margin-right:-20px;
+}
+
+#nav_right #logon .center .fr a {
+    color: #808080;
+    text-decoration: underline;
+}
+
+#center_btn {
+    width: 348px;
+    height: 40px;
+    color: #fff;
+    background-color: #A02D1D;
+    font-size: 16px;
+    border-radius: 3px;
+    font-weight: 700;
+    margin: -12px 0 10px 0;
+    cursor:pointer;
+}
+
+#center_bom a {
+    display: block;
+    width: 346px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #7A3127;
+    font-size: 16px;
+    color:#fff;
+}
+
+#nav_right #logon .center .p_a {
+    display: block;
+    color: #781F14;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#nav_right #logon .center #btn_p {
+    margin-top: 50px;
+}
+
+/*¹Ø±ÕX*/
+#logon .center s {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: url("../imglogon/icons-login.png") no-repeat -11px -125px;
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    cursor: pointer;
+}
+
